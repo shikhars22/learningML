@@ -1,0 +1,762 @@
+PassengerId,Age,Fare,Gender,City,Subscription,Score,JoinDate,Email,Phone,IsActive,Remarks,DeptCode,DiscountCode
+1,52.0,104.22,F,Tokyo,Free,55.0,2020-01-01,,+1-555-8540,True,Good,D04,
+2,15.0,30.03,F,London,Premium,82.0,2020-01-02,user1@example.com,+1-555-6340,False,Average,D04,
+3,72.0,92.78,Female,New York,Basic,90.0,2020-01-03,user2@example.com,+1-555-3474,0,Poor,D02,SAVE10
+4,61.0,146.51,Male,London,Basic,87.0,2020-01-04,user3@example.com,+1-555-9521,Yes,Average,D04,WELCOME50
+5,21.0,96.74,M,Tokyo,Basic,73.0,2020-01-05,user4@example.com,+1-555-1242,False,Unknown,D01,
+6,83.0,53.46,Male,Tokyo,Basic,51.0,,user5@example.com,+1-555-9590,1,Average,D01,SAVE10
+7,75.0,69.11,F,Berlin,Basic,69.0,2020-01-07,user6@example.com,+1-555-3851,True,Poor,D01,SAVE10
+8,75.0,235.78,Female,Tokyo,Premium,93.0,2020-01-08,user7@example.com,+1-555-5791,No,Poor,D02,
+9,24.0,111.1,male,Paris,Basic,79.0,,user8@example.com,+1-555-8509,True,Poor,D02,WELCOME50
+10,3.0,188.49,Female,New York,Basic,66.0,2020-01-10,user9@example.com,+1-555-2440,No,Unknown,D03,
+11,22.0,256.67,F,Berlin,Basic,79.0,2020-01-11,user10@example.com,+1-555-8919,0,Poor,D04,
+12,53.0,348.29,Female,Paris,Basic,50.0,2020-01-12,user11@example.com,+1-555-4452,1,Good,D02,
+13,2.0,29.26,Female,London,Basic,59.0,2020-01-13,user12@example.com,+1-555-8712,0,Poor,D01,WELCOME50
+14,30.0,401.71,F,New York,,53.0,2020-01-14,user13@example.com,+1-555-4336,1,Average,D01,
+15,38.0,317.67,female,Tokyo,Premium,77.0,2020-01-15,user14@example.com,+1-555-4895,True,ok,D02,WELCOME50
+16,2.0,50.06,Female,New York,Basic,80.0,2020-01-16,user15@example.com,+1-555-2616,No,Average,D02,
+17,64.0,438.05,M,London,Premium,67.0,2020-01-17,user16@example.com,+1-555-2567,0,ok,D02,
+18,60.0,461.23,M,Berlin,Basic,56.0,2020-01-18,user17@example.com,+1-555-3308,1,Unknown,D03,SAVE10
+19,21.0,39.93,Female,Berlin,Free,,01/01/2020,user18@example.com,+1-555-7559,none,,D01,WELCOME50
+20,33.0,145.67,female,Berlin,Free,62.0,2020-01-20,user19@example.com,+1-555-2639,False,Average,D03,
+21,76.0,405.04,male,Tokyo,FREE,58.0,2020-01-21,user20@example.com,+1-555-5849,False,Unknown,D03,
+22,58.0,376.65,F,Paris,Basic,75.0,2020-01-22,user21@example.com,+1-555-3663,0,Unknown,,WELCOME50
+23,200.0,100.42,M,Paris,Premium,58.0,2020-01-23,user22@example.com,+1-555-5035,No,Poor,D01,WELCOME50
+24,49.0,112.58,male,New York,Premium,46.0,2020-01-24,user23@example.com,+1-555-2466,none,Good,D01,SAVE10
+25,59.0,191.53,Female,Tokyo,Basic,49.0,2020-01-25,user24@example.com,+1-555-3194,,ok,D02,
+26,42.0,247.42,male,Berlin,Basic,45.0,2020-01-26,user25@example.com,+1-555-7720,True,Poor,D02,WELCOME50
+27,60.0,312.94,Male,Berlin,Free,73.0,2020-01-27,user26@example.com,+1-555-2044,1,Poor,D04,
+28,80.0,190.77,M,London,Premium,72.0,2020-01-28,user27@example.com,+1-555-3032,True,Unknown,D03,
+29,15.0,236.64,Female,London,Basic,71.0,2020-01-29,user28@example.com,+1-555-8539,False,Unknown,D02,WELCOME50
+30,62.0,376.26,F,Berlin,Basic,78.0,2020-01-30,user29@example.com,+1-555-6867,1,ok,D02,
+31,62.0,27.97,female,Berlin,Premium,87.0,2020-01-31,user30@example.com,+1-555-8035,0,Average,D01,SAVE20
+32,47.0,133.69,Female,Tokyo,Free,61.0,2020-02-01,user31@example.com,+1-555-8344,,Average,D01,SAVE20
+33,62.0,359.54,F,Paris,Basic,76.0,2020-02-02,user32@example.com,+1-555-9562,Yes,Poor,D02,SAVE10
+34,51.0,448.65,female,London,Basic,46.0,2020-02-03,user33@example.com,+1-555-7291,No,Excellent,D01,
+35,55.0,260.72,female,Paris,Basic,90.0,2020-02-04,user34@example.com,+1-555-6486,none,Excellent,D04,
+36,64.0,270.74,Female,Tokyo,Free,51.0,2020-02-05,user35@example.com,+1-555-8729,none,Average,D02,
+37,3.0,62.51,male,Berlin,Free,59.0,2020-02-06,user36@example.com,+1-555-7060,No,Excellent,D01,
+38,51.0,229.23,male,Paris,Basic,61.0,2020-02-07,user37@example.com,+1-555-4198,Yes,Average,D04,SAVE10
+39,7.0,270.98,female,Berlin,FREE,47.0,01/01/2020,user38@example.com,+1-555-3398,,Unknown,D01,SAVE20
+40,21.0,128.81,male,Berlin,Basic,70.0,2020-02-09,user39@example.com,+1-555-4667,1,Poor,D01,
+41,73.0,141.93,Male,New York,,73.0,2020-02-10,user40@example.com,+1-555-6081,No,Good,D01,
+42,39.0,194.87,female,  Paris ,Free,67.0,2020-02-11,user41@example.com,+1-555-7764,Yes,Poor,D02,
+43,200.0,19.83,female,Paris,Basic,46.0,2020-02-12,user42@example.com,+1-555-8242,0,Average,D03,WELCOME50
+44,4.0,167.82,F,Berlin,Basic,99.0,2020-02-13,user43@example.com,+1-555-7496,none,Average,D01,
+45,60.0,113.61,male,Tokyo,Basic,78.0,2020-02-14,user44@example.com,+1-555-8305,Yes,Poor,D04,
+46,14.0,170.47,female,New York,Basic,109.0,2020-02-15,user45@example.com,+1-555-4221,False,ok,D02,
+47,9.0,68.68,Male,Berlin,Free,57.0,2020-02-16,user46@example.com,+1-555-3218,False,Average,D02,
+48,53.0,446.36,F,London,Premium,84.0,2020-02-17,user47@example.com,+1-555-6514,True,Excellent,D04,
+49,2.0,300.86,Female,London,Free,81.0,2020-02-18,user48@example.com,+1-555-1007,No,Excellent,D01,WELCOME50
+50,84.0,342.76,female,New York,,65.0,2020-02-19,user49@example.com,+1-555-4619,True,Average,D03,
+51,60.0,396.69,Male,Tokyo,Free,91.0,2020-02-20,user50@example.com,+1-555-3625,none,Average,D01,
+52,71.0,254.24,M,Berlin,Basic,63.0,2020-02-21,user51@example.com,+1-555-4715,Yes,ok,D04,
+53,44.0,52.59,Male,Paris,Basic,64.0,2020-02-22,user52@example.com,+1-555-3971,1,Excellent,D02,
+54,8.0,273.18,Male,New York,Free,17.0,2020-02-23,user53@example.com,+1-555-9637,1,Average,D03,WELCOME50
+55,47.0,297.55,F,Tokyo,Basic,76.0,2020-02-24,user54@example.com,+1-555-4007,False,Average,D02,SAVE20
+56,35.0,375.27,Female,Paris,Premium,50.0,2020-02-25,,+1-555-2175,1,ok,D04,
+57,78.0,221.51,M,London,,61.0,2020-02-26,user56@example.com,+1-555-8479,1,ok,D01,WELCOME50
+58,81.0,72.51,male,London,Premium,54.0,2020-02-27,user57@example.com,+1-555-5625,none,Poor,D03,
+59,36.0,149.05,male,Paris,Basic,64.0,2020-02-28,user58@example.com,+1-555-4927,1,ok,D02,
+60,50.0,187.91,Male,New York,Basic,76.0,2020-02-29,user59@example.com,+1-555-6824,Yes,Good,D02,SAVE10
+61,4.0,,F,London,Premium,70.0,2020-03-01,user60@example.com,+1-555-2213,1,Excellent,D02,
+62,2.0,289.68,,,Free,80.0,2020-03-02,,+1-555-9159,0,Poor,D01,
+63,6.0,184.49,male,Paris,Basic,88.0,2020-03-03,user62@example.com,+1-555-5307,1,Good,D03,
+64,54.0,493.39,M,Paris,Free,64.0,2020-03-04,user63@example.com,+1-555-9599,1,Average,D01,
+65,4.0,306.83,Female,London,Basic,62.0,2020-03-05,user64@example.com,+1-555-8090,True,Average,D01,WELCOME50
+66,54.0,126.24,M,New York,Basic,84.0,2020-03-06,user65@example.com,+1-555-7984,Yes,Poor,D01,SAVE20
+67,63.0,59.87,female,  Berlin ,Basic,85.0,2020-03-07,user66@example.com,+1-555-4113,False,ok,D04,WELCOME50
+68,18.0,84.9,female,New York,Basic,81.0,2020-03-08,user67@example.com,+1-555-9648,,Average,D04,SAVE20
+69,44.0,,Female,Tokyo,Basic,55.0,2020-03-09,user68@example.com,+1-555-8568,No,Unknown,D04,WELCOME50
+70,34.0,88.73,male,Tokyo,Basic,76.0,2020-03-10,user69@example.com,+1-555-2934,Yes,Poor,D03,
+71,74.0,101.42,Female,London,,71.0,2020-03-11,user70@example.com,+1-555-5512,,Good,D01,SAVE10
+72,,149.7,F,London,Premium,,01/01/2020,user71@example.com,+1-555-5236,Yes,Poor,D01,
+73,14.0,94.95,female,London,Free,61.0,2020-03-13,user72@example.com,+1-555-6833,No,Excellent,D04,
+74,48.0,449.42,Male,Tokyo,Free,45.0,2020-03-14,user73@example.com,+1-555-4840,No,ok,D01,
+75,15.0,49.31,Male,  New York ,Basic,80.0,2020-03-15,user74@example.com,+1-555-2220,No,ok,D01,
+76,72.0,267.01,male,New York,Free,31.0,2020-03-16,user75@example.com,+1-555-3685,none,Poor,D02,
+77,78.0,211.09,F,London,Basic,59.0,2020-03-17,user76@example.com,+1-555-4162,False,Average,D01,
+78,62.0,491.37,M,Berlin,Premium,54.0,2020-03-18,user77@example.com,+1-555-5271,1,Average,D02,SAVE10
+79,40.0,64.9,F,New York,Free,54.0,2020-03-19,user78@example.com,+1-555-5227,Yes,Unknown,D01,SAVE10
+80,,204.95,Male,Tokyo,Premium,58.0,2020-03-20,user79@example.com,+1-555-5281,none,Unknown,D03,SAVE10
+81,82.0,485.04,Male,Paris,Basic,88.0,2020-03-21,user80@example.com,+1-555-7654,1,ok,D04,
+82,53.0,434.1,female,Paris,Free,82.0,2020-03-22,,+1-555-2752,1,,D02,SAVE10
+83,24.0,410.37,F,Paris,Basic,66.0,,user82@example.com,+1-555-3778,0,Good,D04,
+84,26.0,136.37,F,Berlin,Premium,87.0,2020-03-24,user83@example.com,+1-555-6145,No,,D02,
+85,60.0,93.73,Male,London,Basic,54.0,2020-03-25,user84@example.com,+1-555-9956,False,Good,D02,
+86,41.0,337.64,M,Tokyo,Premium,52.0,2020-03-26,user85@example.com,+1-555-5346,0,Unknown,D02,
+87,29.0,465.39,male,Berlin,Basic,82.0,2020-03-27,user86@example.com,+1-555-5220,True,ok,D03,SAVE20
+88,15.0,282.81,male,Tokyo,Free,78.0,2020-03-28,user87@example.com,+1-555-2333,none,ok,D01,
+89,45.0,290.09,F,Tokyo,Basic,63.0,2020-03-29,user88@example.com,+1-555-9569,none,Good,D02,
+90,65.0,147.19,male,London,Basic,52.0,2020-03-30,user89@example.com,+1-555-8780,False,Poor,D03,
+91,71.0,387.05,Male,Paris,Basic,91.0,2020-03-31,user90@example.com,+1-555-7053,1,ok,D02,
+92,9.0,101.65,Male,London,Basic,44.0,2020-04-01,user91@example.com,,none,Poor,D01,SAVE20
+93,1.0,168.6,F,Berlin,,61.0,2020-04-02,user92@example.com,+1-555-4488,False,Average,D02,
+94,8.0,218.46,F,Berlin,Basic,73.0,2020-04-03,user93@example.com,+1-555-1822,none,Good,D03,SAVE10
+95,63.0,258.73,female,Berlin,Premium,97.0,2020-04-04,user94@example.com,+1-555-9300,none,ok,D01,SAVE10
+96,11.0,128.78,F,London,Premium,75.0,2020-04-05,user95@example.com,+1-555-8237,No,Excellent,D03,WELCOME50
+97,81.0,66.27,M,Tokyo,Basic,77.0,01/01/2020,user96@example.com,+1-555-1237,True,Average,D01,WELCOME50
+98,8.0,309.2,male,Tokyo,Premium,61.0,2020-04-07,user97@example.com,+1-555-6233,No,Poor,D01,
+99,35.0,151.43,F,New York,Basic,78.0,2020-04-08,user98@example.com,+1-555-8221,True,ok,D04,WELCOME50
+100,35.0,,Female,Berlin,Free,71.0,2020-04-09,user99@example.com,+1-555-4242,none,Good,D04,
+101,33.0,85.64,female,Tokyo,Free,46.0,2020-04-10,user100@example.com,+1-555-7248,0,Unknown,D04,
+102,5.0,245.76,Female,New York,Premium,81.0,2020-04-11,user101@example.com,+1-555-2246,1,Excellent,D01,
+103,41.0,270.97,Male,Tokyo,Basic,84.0,2020-04-12,user102@example.com,+1-555-7254,none,Poor,D02,SAVE20
+104,28.0,35.39,male,Berlin,Basic,82.0,2020-04-13,user103@example.com,+1-555-8001,True,Average,D03,WELCOME50
+105,7.0,174.94,F,Paris,Basic,70.0,2020-04-14,user104@example.com,+1-555-3820,True,Good,D03,SAVE10
+106,73.0,75.86,Female,Berlin,Basic,55.0,2020-04-15,user105@example.com,+1-555-9180,True,Excellent,D03,
+107,72.0,,male,London,Basic,35.0,2020-04-16,user106@example.com,+1-555-6515,none,Good,D04,SAVE20
+108,12.0,495.08,Male,Tokyo,Premium,72.0,2020-04-17,user107@example.com,+1-555-4134,False,ok,D01,
+109,34.0,167.95,M,Tokyo,Free,86.0,2020-04-18,user108@example.com,+1-555-5893,0,Unknown,D04,SAVE20
+110,33.0,406.84,female,London,Basic,84.0,2020-04-19,user109@example.com,+1-555-9342,False,Average,D02,WELCOME50
+111,48.0,134.77,male,London,Premium,82.0,2020-04-20,user110@example.com,+1-555-9296,1,Good,,WELCOME50
+112,23.0,343.94,male,Paris,,68.0,2020-04-21,user111@example.com,+1-555-6978,none,Poor,D03,SAVE10
+113,62.0,382.51,M,Tokyo,Premium,86.0,2020-04-22,user112@example.com,,True,ok,D04,
+114,37.0,301.86,,Tokyo,Free,83.0,2020-04-23,user113@example.com,+1-555-7462,0,ok,D04,WELCOME50
+115,44.0,241.07,Male,Paris,Basic,63.0,2020-04-24,user114@example.com,+1-555-5860,,Average,D02,WELCOME50
+116,35.0,211.8,Male,New York,Premium,80.0,2020-04-25,user115@example.com,+1-555-9407,Yes,ok,D02,
+117,65.0,,M,Paris,Basic,61.0,2020-04-26,user116@example.com,+1-555-6278,1,Poor,D04,
+118,47.0,465.47,female,Berlin,FREE,78.0,2020-04-27,user117@example.com,+1-555-4837,0,Good,D02,
+119,78.0,417.0,F,Tokyo,Free,50.0,2020-04-28,user118@example.com,+1-555-7296,none,Average,D03,
+120,3.0,482.86,Female,London,Free,51.0,2020-04-29,user119@example.com,+1-555-1912,True,ok,D02,SAVE10
+121,1.0,70.91,F,Berlin,Free,85.0,2020-04-30,user120@example.com,+1-555-3378,True,ok,D02,SAVE10
+122,5.0,368.13,male,Tokyo,Basic,84.0,2020-05-01,user121@example.com,+1-555-5185,0,Poor,D04,SAVE10
+123,14.0,469.79,Female,Paris,Basic,79.0,2020-05-02,user122@example.com,+1-555-3029,False,,D04,
+124,27.0,98.8,M,Berlin,Free,71.0,2020-05-03,user123@example.com,+1-555-4523,1,,D01,SAVE10
+125,9.0,42.58,M,Tokyo,Premium,34.0,2020-05-04,user124@example.com,+1-555-5046,True,ok,,
+126,79.0,373.15,female,New York,Basic,68.0,2020-05-05,user125@example.com,+1-555-1312,0,Good,D04,
+127,15.0,291.49,Female,New York,Free,76.0,2020-05-06,user126@example.com,+1-555-1270,True,Average,D02,
+128,42.0,422.5,Male,London,Basic,61.0,2020-05-07,user127@example.com,+1-555-7614,0,ok,D02,WELCOME50
+129,77.0,78.49,Female,Tokyo,Premium,59.0,2020-05-08,user128@example.com,+1-555-9662,1,Excellent,,SAVE20
+130,51.0,399.68,male,New York,FREE,91.0,2020-05-09,user129@example.com,+1-555-2865,0,Average,D01,
+131,63.0,108.8,,Paris,Premium,69.0,2020-05-10,user130@example.com,+1-555-3211,Yes,Unknown,D01,
+132,52.0,90.19,M,Tokyo,Basic,76.0,2020-05-11,user131@example.com,+1-555-9519,0,ok,D03,
+133,4.0,90.49,Female,Paris,Free,81.0,2020-05-12,user132@example.com,+1-555-3470,0,Poor,D03,WELCOME50
+134,23.0,409.14,F,Paris,Free,54.0,2020-05-13,user133@example.com,+1-555-3658,none,Excellent,D01,WELCOME50
+135,15.0,335.95,female,New York,Free,72.0,2020-05-14,user134@example.com,,1,ok,D02,
+136,43.0,266.3,F,Tokyo,Free,89.0,2020-05-15,user135@example.com,+1-555-6964,none,Good,D01,SAVE20
+137,29.0,185.83,female,Berlin,Basic,97.0,2020-05-16,user136@example.com,+1-555-6131,0,Excellent,D03,SAVE10
+138,36.0,439.83,male,New York,Free,70.0,2020-05-17,user137@example.com,+1-555-4278,1,ok,,SAVE20
+139,13.0,202.3,F,New York,Basic,66.0,2020-05-18,user138@example.com,+1-555-2814,Yes,Good,D03,
+140,32.0,410.13,Female,Tokyo,Free,74.0,2020-05-19,user139@example.com,+1-555-6652,1,Excellent,D02,
+141,71.0,225.18,Female,Tokyo,Basic,73.0,2020-05-20,user140@example.com,+1-555-4752,True,Good,D03,
+142,59.0,194.7,,Paris,Free,90.0,2020-05-21,user141@example.com,+1-555-5798,none,Good,D02,
+143,28.0,236.71,Female,Tokyo,Basic,55.0,2020-05-22,user142@example.com,+1-555-5853,1,Excellent,D02,
+144,66.0,157.68,male,Paris,Basic,65.0,2020-05-23,user143@example.com,+1-555-3794,Yes,Excellent,D02,WELCOME50
+145,42.0,376.33,Male,New York,Basic,53.0,2020-05-24,user144@example.com,+1-555-3220,No,Good,D02,
+146,45.0,256.33,,London,Basic,54.0,,user145@example.com,+1-555-3586,0,Unknown,D04,SAVE10
+147,62.0,123.78,female,Berlin,Basic,75.0,2020-05-26,user146@example.com,+1-555-2241,1,Excellent,D03,
+148,57.0,450.79,male,New York,Basic,82.0,2020-05-27,user147@example.com,+1-555-8248,0,ok,D03,
+149,6.0,198.11,female,Tokyo,Basic,60.0,2020-05-28,user148@example.com,+1-555-9978,False,Average,D04,SAVE10
+150,28.0,276.34,Female,Berlin,Basic,81.0,2020-05-29,user149@example.com,,True,Poor,D02,
+151,28.0,454.17,Male,London,Basic,86.0,2020-05-30,user150@example.com,+1-555-4947,none,Good,D02,
+152,44.0,315.88,Female,London,Basic,99.0,2020-05-31,user151@example.com,+1-555-5804,True,Good,D03,
+153,84.0,67.28,M,Paris,Free,71.0,2020-06-01,user152@example.com,+1-555-9916,,Poor,D04,SAVE10
+154,30.0,470.52,Female,Berlin,Free,60.0,2020-06-02,user153@example.com,+1-555-1286,False,,D02,SAVE10
+155,62.0,317.58,female,Paris,Premium,54.0,2020-06-03,user154@example.com,+1-555-7952,none,Poor,D02,
+156,75.0,174.1,Female,New York,Free,53.0,2020-06-04,user155@example.com,,1,Excellent,D02,
+157,62.0,78.24,Female,Berlin,Free,88.0,2020-06-05,user156@example.com,+1-555-7873,False,Unknown,D01,SAVE10
+158,1.0,399.07,Male,New York,Basic,47.0,2020-06-06,user157@example.com,+1-555-9758,No,Good,D04,SAVE10
+159,27.0,313.84,Female,Paris,Basic,88.0,2020-06-07,user158@example.com,+1-555-9772,0,Poor,D02,
+160,62.0,271.4,Male,Berlin,Free,56.0,2020-06-08,user159@example.com,+1-555-3792,0,Average,D01,
+161,77.0,448.01,F,Paris,Premium,59.0,2020-06-09,user160@example.com,+1-555-9519,Yes,ok,D04,
+162,3.0,396.41,M,Berlin,Basic,67.0,2020-06-10,user161@example.com,+1-555-9500,False,Excellent,D02,WELCOME50
+163,70.0,84.32,Male,Paris,Free,59.0,2020-06-11,user162@example.com,+1-555-6876,False,Poor,D03,
+164,72.0,162.74,female,London,Free,83.0,2020-06-12,user163@example.com,+1-555-2543,No,Good,D01,
+165,27.0,131.76,F,Paris,NONE,97.0,2020-06-13,user164@example.com,+1-555-3537,True,ok,D01,WELCOME50
+166,9.0,374.53,Male,London,Premium,60.0,2020-06-14,user165@example.com,+1-555-4951,True,Excellent,D02,WELCOME50
+167,62.0,26.43,Male,Paris,Basic,63.0,2020-06-15,user166@example.com,+1-555-9239,0,Unknown,D02,SAVE10
+168,37.0,289.25,M,Berlin,Premium,67.0,2020-06-16,user167@example.com,+1-555-3624,0,,D01,
+169,51.0,383.6,female,Berlin,Basic,78.0,2020-06-17,user168@example.com,+1-555-3827,1,Average,D03,SAVE10
+170,44.0,439.62,male,Berlin,Basic,67.0,2020-06-18,user169@example.com,+1-555-6475,none,Unknown,D03,SAVE10
+171,24.0,,male,Tokyo,Free,90.0,2020-06-19,user170@example.com,+1-555-6183,No,Average,D04,
+172,79.0,412.42,Male,New York,Free,87.0,2020-06-20,user171@example.com,+1-555-6865,none,Poor,D02,
+173,59.0,64.21,Female,Berlin,Premium,52.0,2020-06-21,user172@example.com,+1-555-9232,none,Excellent,D03,SAVE10
+174,32.0,424.76,female,London,Premium,77.0,2020-06-22,user173@example.com,+1-555-8544,Yes,Poor,D04,WELCOME50
+175,52.0,72.47,F,Berlin,Premium,92.0,2020-06-23,user174@example.com,+1-555-6794,none,Average,D03,WELCOME50
+176,62.0,204.67,Female,Tokyo,Basic,62.0,2020-06-24,user175@example.com,+1-555-6191,Yes,Average,D02,WELCOME50
+177,58.0,400.67,Female,London,Premium,65.0,2020-06-25,user176@example.com,+1-555-4278,none,Average,D04,
+178,52.0,83.46,female,Tokyo,Basic,62.0,2020-06-26,user177@example.com,+1-555-4444,No,ok,D04,
+179,12.0,122.33,Male,London,Basic,62.0,2020-06-27,user178@example.com,+1-555-3435,Yes,Good,D04,
+180,39.0,363.9,,Paris,Basic,44.0,2020-06-28,user179@example.com,+1-555-5056,True,Excellent,D03,SAVE20
+181,2.0,362.82,Male,New York,Premium,50.0,2020-06-29,user180@example.com,+1-555-7003,Yes,Poor,D02,
+182,3.0,324.16,Male,New York,Basic,71.0,2020-06-30,user181@example.com,+1-555-4233,Yes,Poor,D04,
+183,56.0,350.03,male,Tokyo,Basic,92.0,,user182@example.com,+1-555-7123,No,Unknown,D01,
+184,81.0,275.93,Male,New York,Free,60.0,2020-07-02,user183@example.com,+1-555-4370,No,Average,D02,
+185,59.0,133.38,male,Tokyo,Basic,60.0,2020-07-03,user184@example.com,+1-555-2611,Yes,Average,D01,SAVE10
+186,2.0,179.39,male,Tokyo,Premium,95.0,2020-07-04,user185@example.com,+1-555-3238,False,Unknown,D01,
+187,2.0,98.98,Male,Tokyo,Basic,53.0,2020-07-05,user186@example.com,+1-555-6636,No,Poor,D04,WELCOME50
+188,54.0,455.14,M,New York,Premium,45.0,2020-07-06,user187@example.com,+1-555-1167,1,Unknown,D04,
+189,1.0,295.86,F,Tokyo,Free,57.0,,user188@example.com,+1-555-9338,1,Good,D03,
+190,19.0,206.42,Female,  New York ,Free,60.0,2020-07-08,user189@example.com,+1-555-7455,True,ok,D03,
+191,2.0,236.38,male,Tokyo,Free,43.0,2020-07-09,user190@example.com,+1-555-8193,none,Excellent,D03,SAVE10
+192,53.0,474.17,female,  Berlin ,Premium,68.0,2020-07-10,user191@example.com,+1-555-7334,Yes,Good,D02,
+193,44.0,85.14,female,Tokyo,Basic,84.0,2020-07-11,user192@example.com,+1-555-1010,False,Poor,D03,
+194,32.0,297.25,F,,Premium,50.0,2020-07-12,user193@example.com,+1-555-9911,True,ok,,SAVE10
+195,70.0,257.89,female,Tokyo,Basic,71.0,2020-07-13,user194@example.com,+1-555-3814,Yes,ok,D03,
+196,,309.61,M,Paris,Basic,75.0,2020-07-14,user195@example.com,+1-555-1304,No,ok,D04,
+197,68.0,18.87,female,Tokyo,Free,68.0,2020-07-15,user196@example.com,+1-555-5193,1,Average,D03,
+198,55.0,437.34,Female,London,Premium,72.0,2020-07-16,user197@example.com,+1-555-1182,0,Excellent,D02,
+199,75.0,466.74,Female,,Free,72.0,2020-07-17,user198@example.com,+1-555-4494,False,Poor,D02,
+200,56.0,286.92,male,New York,Free,57.0,2020-07-18,user199@example.com,+1-555-3644,0,Poor,D01,WELCOME50
+201,17.0,351.36,Male,Berlin,Basic,92.0,2020-07-19,user200@example.com,+1-555-4951,1,ok,D02,SAVE10
+202,38.0,462.02,M,Tokyo,Basic,88.0,2020-07-20,user201@example.com,+1-555-9411,none,Poor,D03,SAVE20
+203,24.0,356.55,male,New York,Basic,87.0,2020-07-21,user202@example.com,+1-555-6895,none,Excellent,D04,
+204,69.0,84.74,M,Berlin,Basic,85.0,2020-07-22,user203@example.com,+1-555-4054,0,Excellent,D02,
+205,70.0,292.38,Male,Tokyo,Basic,46.0,2020-07-23,user204@example.com,,No,Unknown,D01,SAVE10
+206,11.0,307.29,female,Paris,Free,,2020-07-24,user205@example.com,+1-555-1040,Yes,,D03,
+207,16.0,217.82,female,Tokyo,Basic,79.0,2020-07-25,user206@example.com,+1-555-4378,No,Good,D01,
+208,73.0,370.86,Male,London,Basic,46.0,2020-07-26,user207@example.com,+1-555-6072,0,Excellent,D02,
+209,59.0,467.84,male,London,Basic,66.0,2020-07-27,user208@example.com,+1-555-1131,No,Excellent,D02,
+210,70.0,463.53,Male,Paris,,74.0,2020-07-28,user209@example.com,+1-555-2552,,Excellent,D01,SAVE20
+211,80.0,230.91,F,,Basic,94.0,2020-07-29,user210@example.com,+1-555-5103,False,Unknown,D03,
+212,3.0,65.49,Female,Berlin,,80.0,2020-07-30,user211@example.com,+1-555-3090,No,ok,D02,
+213,20.0,492.57,male,Tokyo,Basic,57.0,2020-07-31,user212@example.com,+1-555-5290,1,ok,D04,
+214,59.0,421.06,M,London,Basic,95.0,2020-08-01,user213@example.com,+1-555-2734,False,Poor,D02,SAVE10
+215,36.0,71.08,F,New York,Free,,2020-08-02,user214@example.com,+1-555-4531,none,ok,D03,SAVE10
+216,19.0,461.21,male,Paris,Basic,,2020-08-03,user215@example.com,+1-555-1354,Yes,Average,D02,
+217,67.0,436.25,Male,London,Basic,65.0,2020-08-04,user216@example.com,+1-555-6607,0,Unknown,D01,
+218,19.0,264.23,Male,Paris,Free,45.0,2020-08-05,user217@example.com,+1-555-6001,none,Excellent,D02,WELCOME50
+219,20.0,299.72,Male,Tokyo,Premium,68.0,2020-08-06,user218@example.com,+1-555-8779,Yes,ok,D02,
+220,71.0,205.51,Male,Berlin,FREE,,2020-08-07,user219@example.com,+1-555-2447,none,Unknown,D03,
+221,52.0,36.83,M,London,Basic,64.0,2020-08-08,user220@example.com,+1-555-5357,True,ok,D01,
+222,33.0,174.25,F,London,Free,76.0,2020-08-09,user221@example.com,+1-555-9335,none,Good,D03,
+223,40.0,403.4,female,  Tokyo ,Basic,57.0,2020-08-10,user222@example.com,+1-555-8631,1,Excellent,D02,
+224,39.0,12.27,Female,New York,Premium,67.0,2020-08-11,user223@example.com,+1-555-8686,False,Good,D04,WELCOME50
+225,82.0,173.41,M,Berlin,Premium,74.0,2020-08-12,user224@example.com,+1-555-7373,none,Excellent,D02,
+226,1.0,205.1,M,London,Premium,72.0,2020-08-13,user225@example.com,+1-555-1581,No,Unknown,D03,SAVE20
+227,11.0,273.32,female,Berlin,Basic,45.0,2020-08-14,user226@example.com,+1-555-8246,Yes,Poor,D04,
+228,57.0,460.73,female,London,Basic,63.0,01/01/2020,user227@example.com,+1-555-3608,none,ok,D03,SAVE20
+229,50.0,179.71,Female,Berlin,Premium,95.0,2020-08-16,user228@example.com,+1-555-9594,False,ok,D03,
+230,23.0,180.01,Female,Paris,Free,62.0,2020-08-17,user229@example.com,+1-555-6663,1,Average,D01,
+231,31.0,371.38,female,London,Premium,70.0,2020-08-18,user230@example.com,+1-555-3647,True,Good,D04,
+232,,231.59,Male,Berlin,Free,68.0,2020-08-19,user231@example.com,+1-555-3420,Yes,ok,D02,
+233,7.0,120.06,M,New York,Free,93.0,2020-08-20,user232@example.com,+1-555-5789,0,Unknown,D03,
+234,16.0,231.7,male,Paris,Basic,89.0,2020-08-21,user233@example.com,+1-555-8579,False,Poor,D02,SAVE10
+235,60.0,79.02,Female,Paris,Free,82.0,2020-08-22,user234@example.com,+1-555-4444,0,Unknown,D01,WELCOME50
+236,2.0,96.43,Female,New York,Premium,55.0,2020-08-23,user235@example.com,,False,Good,D01,
+237,1.0,254.2,female,Berlin,,75.0,2020-08-24,user236@example.com,+1-555-2788,False,Average,D04,SAVE20
+238,48.0,215.27,,Tokyo,Basic,78.0,2020-08-25,user237@example.com,+1-555-6787,1,ok,D01,
+239,12.0,458.27,male,New York,Basic,59.0,2020-08-26,user238@example.com,+1-555-1614,1,Unknown,D01,
+240,69.0,187.57,male,Berlin,Basic,56.0,2020-08-27,user239@example.com,+1-555-9338,1,Excellent,,SAVE20
+241,37.0,294.49,Female,  New York ,Premium,95.0,2020-08-28,user240@example.com,+1-555-5833,none,Poor,D01,SAVE20
+242,32.0,319.81,Male,New York,Basic,65.0,2020-08-29,user241@example.com,+1-555-4563,No,,D01,WELCOME50
+243,9.0,16.42,F,London,Basic,94.0,2020-08-30,user242@example.com,+1-555-4310,False,Poor,D03,
+244,19.0,335.13,male,Berlin,Free,84.0,2020-08-31,user243@example.com,+1-555-2972,Yes,ok,D01,
+245,48.0,97.24,Female,Tokyo,Free,76.0,2020-09-01,user244@example.com,,0,Excellent,D03,
+246,80.0,480.92,male,London,Premium,,2020-09-02,user245@example.com,+1-555-5378,1,Average,D01,
+247,3.0,82.84,F,,Basic,,2020-09-03,user246@example.com,+1-555-6654,none,Average,D01,SAVE20
+248,20.0,213.17,F,New York,Premium,73.0,2020-09-04,user247@example.com,+1-555-1380,1,Excellent,D04,
+249,24.0,,M,New York,Basic,91.0,01/01/2020,user248@example.com,+1-555-3624,0,Poor,D04,
+250,54.0,498.47,female,Berlin,Basic,80.0,2020-09-06,user249@example.com,+1-555-8748,0,ok,D03,
+251,33.0,256.08,female,Berlin,Free,72.0,2020-09-07,user250@example.com,+1-555-8127,False,Unknown,D01,SAVE10
+252,24.0,301.74,Female,London,Premium,95.0,2020-09-08,user251@example.com,+1-555-5047,1,Excellent,D02,
+253,75.0,42.87,F,Tokyo,Premium,67.0,2020-09-09,user252@example.com,+1-555-8628,0,Good,D04,SAVE10
+254,72.0,377.48,M,London,Basic,60.0,2020-09-10,user253@example.com,+1-555-2162,No,Poor,D02,
+255,36.0,112.85,M,Paris,Basic,72.0,2020-09-11,user254@example.com,+1-555-6812,No,Average,D04,
+256,38.0,450.05,male,New York,Premium,81.0,2020-09-12,user255@example.com,+1-555-3027,1,Excellent,D04,
+257,84.0,110.52,male,New York,Basic,44.0,2020-09-13,user256@example.com,+1-555-2263,none,Average,D01,
+258,25.0,103.44,M,,Premium,74.0,2020-09-14,user257@example.com,+1-555-6390,0,Poor,D04,WELCOME50
+259,18.0,27.91,male,London,Premium,82.0,2020-09-15,,+1-555-7101,False,Average,D02,
+260,82.0,241.31,F,London,Premium,65.0,2020-09-16,user259@example.com,,False,Excellent,D04,
+261,66.0,286.77,Male,New York,Basic,86.0,2020-09-17,user260@example.com,+1-555-9371,none,Poor,D03,SAVE20
+262,54.0,42.2,F,London,Basic,79.0,2020-09-18,user261@example.com,+1-555-4801,False,Good,D01,
+263,35.0,,M,Berlin,Free,102.0,2020-09-19,user262@example.com,+1-555-1682,True,Excellent,D01,
+264,80.0,232.11,M,  Berlin ,Free,58.0,2020-09-20,user263@example.com,+1-555-9264,1,Unknown,D03,SAVE20
+265,61.0,266.95,F,London,Basic,82.0,2020-09-21,user264@example.com,+1-555-2102,False,ok,D03,
+266,41.0,225.97,male,New York,Premium,54.0,2020-09-22,user265@example.com,+1-555-9750,No,Excellent,D03,
+267,33.0,206.37,male,London,Free,,2020-09-23,user266@example.com,+1-555-8318,0,Poor,,SAVE20
+268,68.0,284.22,female,London,Free,39.0,2020-09-24,user267@example.com,+1-555-1560,Yes,ok,D01,SAVE10
+269,33.0,86.07,M,London,Basic,78.0,2020-09-25,user268@example.com,+1-555-3360,none,Excellent,D03,
+270,14.0,99.14,Female,Paris,Free,72.0,2020-09-26,user269@example.com,+1-555-1806,Yes,Good,D04,
+271,21.0,432.27,female,Berlin,Premium,62.0,2020-09-27,user270@example.com,+1-555-6289,False,Good,D03,
+272,48.0,473.6,male,Tokyo,Basic,43.0,,user271@example.com,+1-555-8855,Yes,Unknown,D02,
+273,20.0,192.92,F,Tokyo,Premium,59.0,2020-09-29,user272@example.com,+1-555-6988,Yes,Average,D02,
+274,8.0,142.66,male,Paris,Free,70.0,2020-09-30,,+1-555-8246,True,ok,D01,
+275,,325.56,F,London,Free,81.0,2020-10-01,user274@example.com,+1-555-5201,No,Poor,D04,
+276,67.0,210.28,female,Paris,Premium,69.0,2020-10-02,user275@example.com,+1-555-4064,none,Poor,D02,
+277,17.0,22.44,M,Paris,Basic,73.0,2020-10-03,user276@example.com,+1-555-1359,No,Average,D02,SAVE10
+278,33.0,86.51,male,New York,Free,64.0,2020-10-04,user277@example.com,+1-555-8981,True,Good,D04,WELCOME50
+279,48.0,360.83,F,Berlin,,96.0,2020-10-05,user278@example.com,+1-555-5004,True,Good,D03,
+280,76.0,332.87,M,Tokyo,Basic,54.0,2020-10-06,user279@example.com,+1-555-3336,Yes,Excellent,D04,SAVE10
+281,59.0,23.28,Female,London,Basic,59.0,2020-10-07,user280@example.com,+1-555-9355,1,Unknown,D03,
+282,22.0,118.77,F,Tokyo,Basic,62.0,2020-10-08,user281@example.com,+1-555-1589,0,ok,D02,
+283,30.0,123.23,female,Tokyo,Basic,78.0,2020-10-09,user282@example.com,+1-555-7938,0,,D02,WELCOME50
+284,38.0,339.23,Female,Berlin,Premium,54.0,2020-10-10,user283@example.com,+1-555-3481,Yes,Unknown,D02,
+285,51.0,19.66,Female,Tokyo,Basic,72.0,,user284@example.com,+1-555-8977,0,Excellent,D01,SAVE10
+286,54.0,61.01,Male,Tokyo,Basic,72.0,2020-10-12,user285@example.com,+1-555-3636,True,Unknown,D01,
+287,8.0,401.96,male,Paris,Basic,59.0,2020-10-13,user286@example.com,+1-555-9025,No,Average,D01,
+288,27.0,97.49,F,Berlin,Free,74.0,2020-10-14,user287@example.com,+1-555-5994,0,Excellent,D04,WELCOME50
+289,27.0,329.85,Female,New York,Basic,54.0,2020-10-15,user288@example.com,+1-555-6218,none,Average,D02,
+290,21.0,126.71,Male,London,Free,53.0,2020-10-16,user289@example.com,+1-555-6757,Yes,Excellent,D02,
+291,30.0,58.73,female,Tokyo,Basic,71.0,2020-10-17,user290@example.com,+1-555-5212,1,Unknown,D04,
+292,28.0,129.15,M,London,Basic,45.0,2020-10-18,user291@example.com,+1-555-2546,Yes,Average,D01,
+293,64.0,363.91,F,New York,Premium,37.0,,user292@example.com,+1-555-4869,False,Average,D04,
+294,69.0,429.29,,London,Free,77.0,2020-10-20,user293@example.com,+1-555-8798,Yes,Average,D01,
+295,61.0,416.81,male,New York,Basic,85.0,2020-10-21,user294@example.com,+1-555-2626,True,Unknown,D02,SAVE10
+296,48.0,204.62,Male,Paris,Free,62.0,2020-10-22,user295@example.com,+1-555-1460,No,Poor,D03,SAVE10
+297,19.0,337.36,Female,Tokyo,FREE,59.0,2020-10-23,user296@example.com,+1-555-2459,No,Unknown,D01,
+298,4.0,110.44,male,New York,Basic,85.0,2020-10-24,user297@example.com,+1-555-1867,none,Average,D02,WELCOME50
+299,35.0,153.64,Female,London,Premium,52.0,2020-10-25,user298@example.com,+1-555-7518,0,ok,D02,WELCOME50
+300,64.0,449.2,F,,Premium,49.0,2020-10-26,user299@example.com,+1-555-4109,True,Poor,D03,
+301,49.0,,F,Paris,Premium,80.0,2020-10-27,user300@example.com,+1-555-5889,False,ok,D02,SAVE10
+302,17.0,51.9,F,Tokyo,Basic,70.0,2020-10-28,user301@example.com,+1-555-8260,,Unknown,D02,WELCOME50
+303,44.0,111.86,female,New York,Basic,85.0,2020-10-29,user302@example.com,+1-555-9367,Yes,Unknown,D01,WELCOME50
+304,30.0,23.0,female,Paris,Premium,37.0,2020-10-30,user303@example.com,+1-555-5208,True,Average,D01,SAVE10
+305,46.0,98.9,Male,  London ,Basic,48.0,2020-10-31,user304@example.com,+1-555-3375,True,Average,D03,
+306,6.0,295.69,F,Paris,Basic,70.0,2020-11-01,user305@example.com,+1-555-4729,none,Excellent,D03,
+307,37.0,216.5,male,Paris,Basic,76.0,2020-11-02,user306@example.com,+1-555-2656,False,Poor,D02,
+308,24.0,447.41,Female,Berlin,Premium,82.0,01/01/2020,user307@example.com,+1-555-5122,Yes,Poor,D01,WELCOME50
+309,46.0,410.55,M,Paris,Premium,72.0,2020-11-04,user308@example.com,+1-555-8469,1,Average,D03,
+310,53.0,177.49,male,Paris,Premium,72.0,2020-11-05,user309@example.com,+1-555-6244,none,,D03,SAVE10
+311,60.0,137.12,female,Tokyo,Basic,64.0,2020-11-06,user310@example.com,+1-555-4104,1,Average,D04,WELCOME50
+312,63.0,196.05,female,London,Premium,93.0,2020-11-07,user311@example.com,+1-555-9330,none,Unknown,D03,
+313,32.0,299.24,male,Tokyo,Basic,53.0,2020-11-08,user312@example.com,+1-555-1401,No,,D02,
+314,33.0,141.35,female,Tokyo,Basic,75.0,2020-11-09,user313@example.com,+1-555-5317,none,Average,D01,
+315,67.0,315.83,F,New York,Basic,55.0,2020-11-10,user314@example.com,+1-555-8533,0,Good,D03,
+316,18.0,210.61,Male,Tokyo,Free,78.0,2020-11-11,user315@example.com,+1-555-3419,True,Poor,D04,
+317,25.0,280.5,Female,Berlin,Premium,54.0,2020-11-12,user316@example.com,+1-555-3082,,ok,D01,
+318,54.0,223.7,Male,Berlin,Basic,81.0,2020-11-13,user317@example.com,,False,Unknown,D03,
+319,58.0,154.29,Female,New York,Free,71.0,2020-11-14,user318@example.com,+1-555-3578,1,Unknown,D04,WELCOME50
+320,67.0,474.74,Female,London,Basic,,2020-11-15,user319@example.com,+1-555-6962,none,Good,D03,WELCOME50
+321,46.0,384.17,Male,London,Basic,65.0,2020-11-16,user320@example.com,+1-555-6042,True,ok,D01,
+322,24.0,,male,Tokyo,Free,76.0,2020-11-17,user321@example.com,+1-555-4551,False,Excellent,D01,
+323,32.0,435.55,Female,Tokyo,Free,58.0,2020-11-18,user322@example.com,+1-555-1651,0,Good,D01,WELCOME50
+324,47.0,248.84,Male,Tokyo,,65.0,2020-11-19,user323@example.com,+1-555-1045,False,ok,D02,SAVE10
+325,23.0,448.33,Female,  London ,Basic,71.0,2020-11-20,user324@example.com,+1-555-7983,True,Good,D03,
+326,66.0,401.93,M,Paris,Basic,47.0,2020-11-21,user325@example.com,+1-555-9416,0,Unknown,D02,WELCOME50
+327,27.0,218.35,male,Berlin,Free,48.0,2020-11-22,user326@example.com,+1-555-4934,False,Poor,D01,
+328,2.0,21.01,F,Paris,Free,78.0,2020-11-23,user327@example.com,+1-555-2943,0,Good,D04,SAVE10
+329,17.0,141.65,Female,Paris,Premium,67.0,2020-11-24,user328@example.com,+1-555-1729,none,Excellent,D03,
+330,33.0,275.4,M,London,Premium,61.0,2020-11-25,user329@example.com,+1-555-8169,none,Average,D02,
+331,9.0,320.4,F,Paris,Premium,58.0,2020-11-26,user330@example.com,+1-555-3250,True,ok,D03,
+332,43.0,136.36,F,New York,Basic,59.0,2020-11-27,user331@example.com,+1-555-1197,True,Good,D04,SAVE20
+333,48.0,78.28,,Tokyo,Premium,71.0,2020-11-28,user332@example.com,+1-555-7443,0,Good,D02,
+334,39.0,419.12,Male,New York,Basic,,2020-11-29,user333@example.com,,Yes,Excellent,D01,SAVE10
+335,42.0,492.36,Female,Berlin,Free,38.0,2020-11-30,user334@example.com,+1-555-8928,No,Poor,D02,
+336,26.0,267.59,M,Tokyo,Basic,91.0,2020-12-01,user335@example.com,+1-555-4213,False,Good,D03,
+337,50.0,94.12,F,Paris,Basic,90.0,2020-12-02,user336@example.com,,False,Good,D03,
+338,25.0,143.43,Female,Berlin,Basic,35.0,2020-12-03,user337@example.com,+1-555-3889,Yes,Poor,D03,WELCOME50
+339,24.0,19.01,Male,Tokyo,Free,,2020-12-04,user338@example.com,+1-555-1478,Yes,Excellent,D03,SAVE10
+340,13.0,458.01,Female,Paris,Basic,85.0,2020-12-05,user339@example.com,+1-555-7659,Yes,ok,D01,WELCOME50
+341,60.0,67.7,male,New York,Basic,70.0,2020-12-06,user340@example.com,+1-555-2234,1,ok,D02,
+342,7.0,292.49,Male,Tokyo,Basic,50.0,2020-12-07,user341@example.com,+1-555-4572,1,Good,D01,WELCOME50
+343,57.0,144.29,M,Paris,Premium,85.0,2020-12-08,user342@example.com,+1-555-9626,0,Poor,D01,
+344,36.0,281.55,F,New York,Basic,66.0,2020-12-09,user343@example.com,+1-555-1679,1,Good,D01,SAVE20
+345,45.0,329.2,Female,Berlin,Premium,78.0,2020-12-10,user344@example.com,+1-555-5492,none,Average,D03,
+346,20.0,416.57,Male,Berlin,Premium,103.0,2020-12-11,user345@example.com,+1-555-4258,none,ok,D03,SAVE20
+347,65.0,111.15,male,Berlin,Basic,73.0,2020-12-12,user346@example.com,+1-555-8126,True,,D03,
+348,8.0,15.39,Male,Berlin,Premium,56.0,2020-12-13,user347@example.com,+1-555-2747,0,Average,D02,
+349,16.0,77.07,female,London,Premium,64.0,2020-12-14,user348@example.com,+1-555-7883,False,Good,D04,SAVE20
+350,14.0,,male,Tokyo,BASIC,58.0,2020-12-15,user349@example.com,+1-555-9536,No,Excellent,D03,
+351,76.0,438.21,M,Tokyo,Free,76.0,01/01/2020,user350@example.com,+1-555-2562,True,ok,D02,
+352,15.0,302.73,F,London,Basic,57.0,2020-12-17,user351@example.com,+1-555-3351,False,Unknown,D03,
+353,66.0,,M,Paris,Premium,62.0,2020-12-18,user352@example.com,+1-555-1014,False,Average,D03,
+354,32.0,335.87,Female,Paris,Basic,50.0,2020-12-19,user353@example.com,+1-555-4603,0,ok,D01,
+355,63.0,95.93,Male,Berlin,Basic,68.0,2020-12-20,user354@example.com,+1-555-7817,Yes,Poor,D01,
+356,51.0,458.06,female,New York,,72.0,2020-12-21,user355@example.com,+1-555-1924,Yes,Excellent,D01,SAVE10
+357,25.0,215.2,male,Paris,Basic,29.0,2020-12-22,user356@example.com,+1-555-8729,True,Average,D02,
+358,58.0,197.74,male,,Basic,73.0,2020-12-23,user357@example.com,+1-555-3343,Yes,Poor,D04,
+359,63.0,264.27,Male,Tokyo,Basic,69.0,2020-12-24,user358@example.com,+1-555-7172,False,Good,D04,
+360,62.0,33.01,female,New York,Basic,58.0,2020-12-25,user359@example.com,,Yes,Poor,,WELCOME50
+361,22.0,91.48,Male,Tokyo,Basic,100.0,2020-12-26,user360@example.com,+1-555-4848,1,Average,D03,
+362,58.0,371.64,Female,London,Basic,84.0,2020-12-27,user361@example.com,+1-555-1169,Yes,Average,D02,
+363,58.0,50.57,M,London,Free,53.0,2020-12-28,user362@example.com,+1-555-8304,False,Good,D03,
+364,49.0,305.54,male,Berlin,Basic,82.0,2020-12-29,user363@example.com,,0,Poor,,SAVE10
+365,52.0,130.22,Female,Paris,Basic,88.0,2020-12-30,user364@example.com,+1-555-4110,True,Poor,D02,
+366,42.0,200.75,M,Berlin,Free,71.0,2020-12-31,user365@example.com,+1-555-5590,No,Good,D02,
+367,70.0,151.46,Female,Tokyo,Free,75.0,2021-01-01,user366@example.com,+1-555-5719,Yes,Poor,D04,SAVE10
+368,15.0,184.28,,Berlin,Basic,75.0,2021-01-02,user367@example.com,+1-555-2296,none,ok,D01,SAVE10
+369,54.0,362.33,male,New York,Free,38.0,2021-01-03,user368@example.com,+1-555-5645,none,Good,D02,
+370,60.0,155.59,Male,Tokyo,Premium,67.0,,user369@example.com,+1-555-3341,False,Excellent,D04,
+371,8.0,287.54,Male,London,,66.0,2021-01-05,user370@example.com,+1-555-7082,No,Average,D01,
+372,53.0,243.26,M,Paris,Basic,91.0,2021-01-06,user371@example.com,+1-555-2936,No,Excellent,D01,
+373,60.0,335.2,,Tokyo,Basic,75.0,2021-01-07,user372@example.com,+1-555-8562,,ok,D02,
+374,5.0,469.05,female,Tokyo,Premium,65.0,2021-01-08,user373@example.com,+1-555-4826,No,ok,D03,SAVE10
+375,68.0,368.96,M,  New York ,Free,68.0,2021-01-09,user374@example.com,+1-555-1790,,Unknown,D03,SAVE10
+376,6.0,115.32,F,Paris,Free,,2021-01-10,user375@example.com,+1-555-7719,0,Unknown,D03,
+377,47.0,25.28,Female,London,Basic,67.0,2021-01-11,user376@example.com,+1-555-1257,False,Unknown,D02,WELCOME50
+378,55.0,138.51,female,Tokyo,Free,59.0,2021-01-12,user377@example.com,+1-555-1702,False,Good,D03,
+379,40.0,301.59,Female,Tokyo,Basic,65.0,2021-01-13,user378@example.com,+1-555-3225,Yes,Poor,D04,WELCOME50
+380,52.0,35.2,male,New York,Premium,84.0,2021-01-14,user379@example.com,+1-555-8413,Yes,ok,D04,WELCOME50
+381,16.0,253.22,female,Berlin,,77.0,2021-01-15,user380@example.com,+1-555-5032,Yes,Excellent,D04,SAVE10
+382,,,F,London,Basic,70.0,2021-01-16,user381@example.com,,none,Excellent,D04,WELCOME50
+383,30.0,173.78,,Paris,Basic,72.0,2021-01-17,user382@example.com,+1-555-8963,none,Excellent,D01,SAVE10
+384,19.0,387.75,Male,Tokyo,Free,61.0,,user383@example.com,+1-555-4697,none,Excellent,D04,
+385,17.0,62.23,F,Tokyo,Basic,67.0,2021-01-19,user384@example.com,+1-555-4763,none,Unknown,D03,
+386,63.0,46.82,M,London,Basic,60.0,2021-01-20,user385@example.com,+1-555-5942,none,Excellent,D02,
+387,19.0,366.81,Male,Berlin,Premium,65.0,2021-01-21,user386@example.com,+1-555-8182,none,Poor,D03,
+388,58.0,252.79,Male,Tokyo,Free,90.0,2021-01-22,user387@example.com,+1-555-5454,0,Unknown,D04,SAVE10
+389,55.0,347.32,M,London,Premium,53.0,2021-01-23,user388@example.com,+1-555-7606,none,Excellent,D01,
+390,200.0,,female,New York,Basic,59.0,2021-01-24,user389@example.com,+1-555-2342,No,Good,D04,SAVE20
+391,23.0,130.74,Male,,Basic,51.0,2021-01-25,user390@example.com,+1-555-3171,No,Average,D02,SAVE10
+392,9.0,411.36,F,Paris,Basic,47.0,2021-01-26,user391@example.com,+1-555-5375,1,Average,D03,
+393,12.0,401.71,male,Tokyo,Free,67.0,2021-01-27,user392@example.com,+1-555-4163,0,Average,D02,
+394,1.0,350.4,Male,London,Basic,60.0,2021-01-28,user393@example.com,+1-555-8779,Yes,,D02,
+395,58.0,143.35,F,New York,,96.0,2021-01-29,user394@example.com,,True,Excellent,D02,
+396,1.0,299.21,Female,Paris,Free,65.0,2021-01-30,user395@example.com,+1-555-3821,none,ok,D03,
+397,34.0,186.88,F,London,Premium,89.0,2021-01-31,user396@example.com,+1-555-7315,1,ok,D04,WELCOME50
+398,48.0,,male,London,Free,84.0,2021-02-01,user397@example.com,+1-555-2860,True,ok,D02,
+399,1.0,459.48,F,Paris,Free,66.0,2021-02-02,user398@example.com,+1-555-6318,No,Unknown,D03,
+400,,77.04,M,New York,Basic,101.0,,user399@example.com,+1-555-5456,1,Poor,D01,
+401,61.0,475.62,male,New York,Basic,74.0,2021-02-04,user400@example.com,+1-555-6736,1,Good,D03,
+402,64.0,228.54,female,Berlin,Free,92.0,2021-02-05,user401@example.com,+1-555-9493,False,Good,D01,SAVE10
+403,63.0,100.72,Female,,Basic,90.0,2021-02-06,user402@example.com,+1-555-1392,No,Average,D03,
+404,69.0,275.53,M,Paris,Basic,76.0,2021-02-07,user403@example.com,+1-555-6749,No,Average,D04,SAVE10
+405,22.0,437.74,female,Paris,Basic,81.0,2021-02-08,user404@example.com,+1-555-4365,0,ok,D02,
+406,67.0,368.79,F,Paris,Basic,79.0,2021-02-09,user405@example.com,+1-555-1095,1,ok,D04,
+407,76.0,405.21,male,New York,Basic,52.0,2021-02-10,user406@example.com,+1-555-6358,none,Average,D03,
+408,26.0,332.8,Female,Tokyo,Free,70.0,2021-02-11,user407@example.com,+1-555-5493,No,Excellent,,SAVE10
+409,16.0,349.22,M,Berlin,Basic,86.0,2021-02-12,user408@example.com,+1-555-4007,1,Poor,D01,
+410,51.0,426.11,female,London,Basic,92.0,2021-02-13,user409@example.com,+1-555-2794,0,Poor,D03,SAVE10
+411,57.0,132.34,female,London,FREE,59.0,2021-02-14,user410@example.com,+1-555-7157,none,Poor,D02,WELCOME50
+412,29.0,249.82,Female,Paris,Basic,77.0,2021-02-15,user411@example.com,+1-555-7572,0,Poor,D01,
+413,78.0,118.39,F,Tokyo,Premium,72.0,2021-02-16,user412@example.com,+1-555-7391,False,Average,D01,
+414,69.0,493.96,Female,New York,Basic,68.0,2021-02-17,user413@example.com,+1-555-5226,none,Good,D04,
+415,47.0,472.59,female,Tokyo,Basic,75.0,2021-02-18,user414@example.com,+1-555-2886,1,Average,D03,
+416,62.0,,Male,  Tokyo ,Basic,73.0,2021-02-19,user415@example.com,+1-555-9853,No,Poor,D01,SAVE20
+417,69.0,355.73,M,New York,Free,78.0,2021-02-20,user416@example.com,+1-555-2602,No,Average,D02,
+418,76.0,463.37,Female,,Free,91.0,2021-02-21,user417@example.com,,1,Poor,D01,
+419,16.0,98.48,female,Tokyo,Basic,81.0,2021-02-22,user418@example.com,+1-555-1725,1,Unknown,D01,
+420,48.0,288.29,F,London,Basic,74.0,2021-02-23,user419@example.com,+1-555-2966,1,ok,D04,SAVE20
+421,39.0,458.59,female,New York,Premium,97.0,2021-02-24,user420@example.com,+1-555-7877,Yes,Good,D04,SAVE10
+422,33.0,26.63,F,Berlin,Basic,86.0,2021-02-25,user421@example.com,+1-555-2717,none,Unknown,D02,
+423,23.0,351.74,Female,Paris,Basic,68.0,2021-02-26,user422@example.com,+1-555-7430,No,Excellent,D04,
+424,10.0,155.7,F,New York,Premium,51.0,2021-02-27,user423@example.com,+1-555-3773,none,Average,D01,
+425,69.0,462.95,male,Berlin,NONE,55.0,2021-02-28,user424@example.com,+1-555-1201,0,Excellent,D01,SAVE20
+426,34.0,485.82,male,Berlin,Free,83.0,2021-03-01,user425@example.com,+1-555-5465,No,Average,D04,WELCOME50
+427,52.0,472.69,male,  Tokyo ,Basic,60.0,2021-03-02,user426@example.com,+1-555-1976,Yes,ok,D01,WELCOME50
+428,10.0,242.36,Male,Tokyo,Basic,54.0,2021-03-03,user427@example.com,+1-555-6206,1,Unknown,D01,SAVE10
+429,19.0,432.4,Female,Tokyo,Basic,58.0,2021-03-04,user428@example.com,+1-555-8380,False,ok,D02,
+430,58.0,423.83,female,New York,Free,59.0,2021-03-05,user429@example.com,+1-555-5232,1,Poor,D04,
+431,1.0,166.36,female,New York,Free,82.0,2021-03-06,user430@example.com,+1-555-4654,1,ok,D01,WELCOME50
+432,69.0,,Male,Paris,Basic,67.0,2021-03-07,user431@example.com,+1-555-6846,,ok,D04,WELCOME50
+433,4.0,28.13,F,Tokyo,Premium,49.0,2021-03-08,user432@example.com,+1-555-4205,none,Poor,D02,
+434,16.0,302.17,Male,Berlin,Basic,70.0,2021-03-09,user433@example.com,+1-555-4836,No,Average,D04,
+435,24.0,122.7,F,London,Premium,73.0,2021-03-10,user434@example.com,+1-555-4093,1,Poor,D01,
+436,80.0,,F,Paris,Free,62.0,2021-03-11,user435@example.com,+1-555-3584,No,Unknown,D04,
+437,200.0,47.71,M,New York,,87.0,2021-03-12,user436@example.com,+1-555-3600,True,ok,D01,
+438,32.0,351.18,female,Paris,Basic,63.0,,user437@example.com,+1-555-2305,0,Poor,D01,
+439,84.0,176.54,male,Paris,Basic,86.0,2021-03-14,user438@example.com,+1-555-8216,none,ok,D01,
+440,24.0,365.14,F,Paris,Free,78.0,,user439@example.com,+1-555-5445,No,Unknown,D02,
+441,12.0,42.02,M,Paris,Basic,,2021-03-16,user440@example.com,+1-555-6807,False,Excellent,D04,
+442,50.0,164.49,female,London,Basic,53.0,2021-03-17,user441@example.com,+1-555-1366,0,Unknown,D02,
+443,35.0,274.35,male,Tokyo,Premium,71.0,2021-03-18,user442@example.com,+1-555-7677,False,Good,D04,
+444,33.0,397.45,F,Berlin,Basic,69.0,2021-03-19,user443@example.com,+1-555-4887,1,Good,D02,
+445,33.0,166.19,F,Paris,Basic,48.0,2021-03-20,user444@example.com,+1-555-8762,0,Good,D03,
+446,61.0,316.69,Male,Paris,Basic,86.0,2021-03-21,user445@example.com,+1-555-3382,No,ok,D01,
+447,51.0,444.13,Male,Paris,Free,57.0,2021-03-22,user446@example.com,+1-555-7116,0,Average,D01,SAVE20
+448,43.0,311.77,female,Tokyo,Premium,60.0,2021-03-23,user447@example.com,+1-555-1931,1,Average,D02,
+449,12.0,124.15,male,New York,Basic,54.0,2021-03-24,user448@example.com,+1-555-3658,Yes,Average,D03,
+450,67.0,21.96,F,New York,Basic,80.0,2021-03-25,user449@example.com,+1-555-4476,none,ok,,
+451,65.0,436.35,female,London,Basic,47.0,2021-03-26,user450@example.com,+1-555-1399,False,Unknown,D04,
+452,33.0,20.42,female,New York,Premium,79.0,2021-03-27,user451@example.com,+1-555-3044,1,Average,D02,SAVE10
+453,40.0,,Female,Paris,Free,85.0,2021-03-28,user452@example.com,+1-555-2170,Yes,Excellent,D01,
+454,74.0,269.18,Male,Paris,Premium,78.0,2021-03-29,user453@example.com,+1-555-1512,0,Good,D01,WELCOME50
+455,43.0,470.14,male,Paris,Basic,80.0,2021-03-30,user454@example.com,+1-555-6946,0,Unknown,D02,
+456,44.0,401.4,F,London,Premium,81.0,2021-03-31,user455@example.com,+1-555-3595,1,Good,D02,
+457,29.0,498.99,female,Paris,Basic,55.0,2021-04-01,user456@example.com,+1-555-3004,No,Average,D04,
+458,13.0,181.85,F,  New York ,Basic,91.0,2021-04-02,user457@example.com,+1-555-2677,0,Unknown,D04,SAVE10
+459,12.0,385.92,Female,Tokyo,Basic,63.0,2021-04-03,user458@example.com,+1-555-1497,No,Poor,D01,SAVE20
+460,,206.95,,Tokyo,Free,69.0,2021-04-04,user459@example.com,+1-555-3397,No,Excellent,D01,
+461,2.0,245.14,female,Berlin,Basic,65.0,2021-04-05,user460@example.com,,none,Average,D02,SAVE10
+462,35.0,317.48,F,New York,Basic,77.0,2021-04-06,user461@example.com,+1-555-8850,No,Average,D01,SAVE10
+463,81.0,438.1,Male,Paris,Premium,61.0,2021-04-07,user462@example.com,+1-555-6414,True,Excellent,D01,SAVE10
+464,8.0,492.2,Female,Tokyo,Basic,71.0,2021-04-08,user463@example.com,+1-555-9564,none,Excellent,D02,
+465,26.0,386.45,male,New York,Basic,51.0,2021-04-09,user464@example.com,+1-555-1057,Yes,Poor,D01,SAVE10
+466,74.0,214.71,Female,  Tokyo ,Basic,87.0,2021-04-10,user465@example.com,+1-555-7630,Yes,Average,D01,WELCOME50
+467,34.0,216.46,Male,Paris,Basic,80.0,2021-04-11,user466@example.com,+1-555-6804,0,ok,D03,SAVE10
+468,7.0,371.42,male,Tokyo,Basic,65.0,2021-04-12,user467@example.com,+1-555-7601,0,Average,,
+469,68.0,127.0,Female,Berlin,Basic,62.0,2021-04-13,user468@example.com,+1-555-9942,No,Good,D02,
+470,58.0,64.13,M,Berlin,Free,79.0,2021-04-14,user469@example.com,+1-555-7051,none,Unknown,D03,SAVE20
+471,75.0,183.76,Male,Tokyo,Basic,59.0,2021-04-15,user470@example.com,+1-555-8228,none,Unknown,D04,WELCOME50
+472,29.0,150.75,Male,New York,Premium,71.0,2021-04-16,user471@example.com,+1-555-6981,True,Good,D04,SAVE10
+473,36.0,155.19,Male,New York,Basic,87.0,2021-04-17,user472@example.com,+1-555-3730,No,Unknown,D04,WELCOME50
+474,21.0,124.47,M,New York,Basic,57.0,2021-04-18,user473@example.com,+1-555-6671,True,Excellent,D03,
+475,36.0,30.63,M,Tokyo,Basic,75.0,2021-04-19,user474@example.com,+1-555-3171,No,,D03,
+476,10.0,18.76,F,New York,Basic,74.0,2021-04-20,user475@example.com,+1-555-6982,False,Unknown,D04,
+477,73.0,493.98,female,Paris,Basic,68.0,,user476@example.com,+1-555-8621,False,Good,D01,SAVE20
+478,24.0,219.61,Female,Berlin,Premium,62.0,2021-04-22,user477@example.com,+1-555-4346,1,Poor,D01,SAVE20
+479,64.0,198.32,F,Paris,Premium,88.0,2021-04-23,,+1-555-2032,No,,D03,
+480,49.0,343.03,Female,New York,Basic,61.0,,user479@example.com,+1-555-3240,none,ok,D03,
+481,36.0,116.94,,Paris,Basic,42.0,2021-04-25,user480@example.com,+1-555-4117,0,Unknown,D03,WELCOME50
+482,82.0,475.48,M,New York,Basic,79.0,2021-04-26,user481@example.com,+1-555-8494,Yes,Poor,D04,
+483,24.0,395.31,female,  Tokyo ,Basic,51.0,2021-04-27,user482@example.com,+1-555-8601,1,Good,D01,
+484,23.0,53.81,M,Paris,Free,80.0,2021-04-28,user483@example.com,+1-555-3218,0,Unknown,D03,WELCOME50
+485,62.0,214.61,female,Tokyo,Free,90.0,2021-04-29,user484@example.com,+1-555-9175,False,Good,D03,
+486,37.0,440.77,F,Tokyo,Basic,79.0,2021-04-30,user485@example.com,+1-555-7115,No,Excellent,D02,
+487,12.0,472.92,male,London,Basic,86.0,2021-05-01,user486@example.com,+1-555-8756,1,,D04,SAVE20
+488,55.0,239.03,F,New York,Basic,100.0,2021-05-02,user487@example.com,+1-555-5409,No,Excellent,D02,WELCOME50
+489,13.0,310.57,Female,Berlin,Premium,84.0,2021-05-03,user488@example.com,+1-555-6284,False,Excellent,D01,
+490,23.0,91.85,F,New York,Premium,74.0,2021-05-04,user489@example.com,+1-555-3830,,Good,D02,
+491,30.0,495.67,Male,Berlin,Premium,94.0,2021-05-05,user490@example.com,+1-555-3281,False,ok,D02,
+492,17.0,123.52,Female,,Basic,96.0,2021-05-06,,+1-555-5681,True,Average,D02,
+493,62.0,471.94,female,Tokyo,Basic,96.0,2021-05-07,user492@example.com,+1-555-6811,False,Good,D04,
+494,84.0,328.33,Female,Paris,Free,62.0,2021-05-08,user493@example.com,+1-555-9584,none,Unknown,D01,WELCOME50
+495,13.0,307.79,male,Paris,Basic,49.0,2021-05-09,user494@example.com,+1-555-2968,none,ok,D02,
+496,59.0,261.22,M,London,Premium,61.0,2021-05-10,user495@example.com,+1-555-9823,No,ok,D04,
+497,19.0,123.03,female,Berlin,Premium,80.0,2021-05-11,user496@example.com,+1-555-7893,Yes,Unknown,,SAVE10
+498,49.0,96.5,Female,Berlin,Basic,72.0,2021-05-12,user497@example.com,+1-555-9308,False,Average,D03,SAVE20
+499,12.0,118.04,female,Berlin,Basic,66.0,2021-05-13,user498@example.com,+1-555-1106,0,ok,D02,
+500,61.0,101.35,female,Tokyo,Premium,78.0,2021-05-14,user499@example.com,+1-555-4047,none,Excellent,D01,
+501,19.0,392.0,female,Berlin,Basic,47.0,2021-05-15,user500@example.com,+1-555-2813,Yes,Average,D02,
+502,76.0,181.56,M,Paris,Premium,72.0,2021-05-16,user501@example.com,+1-555-4337,True,,D03,WELCOME50
+503,9.0,38.34,F,Tokyo,Premium,86.0,2021-05-17,user502@example.com,+1-555-6157,1,Average,D01,
+504,71.0,484.86,female,New York,Basic,78.0,2021-05-18,user503@example.com,+1-555-4097,1,Good,D04,WELCOME50
+505,28.0,443.06,Male,Berlin,Basic,80.0,2021-05-19,user504@example.com,+1-555-3366,none,Average,D01,
+506,78.0,464.6,male,Berlin,Premium,93.0,2021-05-20,user505@example.com,+1-555-5624,Yes,Excellent,D04,
+507,52.0,497.5,M,New York,Premium,69.0,2021-05-21,user506@example.com,,none,Good,D01,WELCOME50
+508,83.0,95.21,Female,Berlin,FREE,60.0,2021-05-22,user507@example.com,+1-555-1951,1,Poor,D04,
+509,16.0,204.16,M,,Basic,87.0,2021-05-23,user508@example.com,+1-555-8812,False,Unknown,D03,
+510,69.0,381.54,Female,Tokyo,Free,87.0,2021-05-24,user509@example.com,+1-555-6638,Yes,Unknown,D03,WELCOME50
+511,12.0,351.05,M,Paris,Free,78.0,2021-05-25,user510@example.com,+1-555-9083,No,Average,D03,
+512,25.0,85.41,Female,New York,Premium,67.0,2021-05-26,user511@example.com,+1-555-3149,False,ok,D01,
+513,52.0,409.76,female,London,Basic,70.0,2021-05-27,user512@example.com,+1-555-6069,False,Good,D03,SAVE10
+514,53.0,119.98,F,New York,Basic,50.0,2021-05-28,user513@example.com,+1-555-7977,False,Poor,D02,
+515,23.0,119.67,,Berlin,Premium,86.0,2021-05-29,user514@example.com,+1-555-3100,No,Good,D03,WELCOME50
+516,16.0,273.12,Female,Tokyo,Basic,86.0,2021-05-30,user515@example.com,+1-555-8230,True,Unknown,,
+517,,300.54,Male,Tokyo,Basic,50.0,2021-05-31,user516@example.com,+1-555-4770,0,Good,D04,SAVE10
+518,39.0,294.24,Female,New York,Basic,83.0,2021-06-01,user517@example.com,,none,Poor,D04,SAVE10
+519,53.0,54.83,Male,Paris,Free,76.0,2021-06-02,user518@example.com,+1-555-9798,1,ok,D01,
+520,42.0,439.96,male,London,Basic,54.0,2021-06-03,user519@example.com,+1-555-8076,none,Average,D02,
+521,58.0,140.14,female,Tokyo,Basic,51.0,2021-06-04,user520@example.com,+1-555-1896,Yes,Excellent,D03,
+522,39.0,73.46,Male,Berlin,Premium,,2021-06-05,user521@example.com,+1-555-3731,True,Good,D02,
+523,14.0,445.49,F,Berlin,Basic,64.0,2021-06-06,user522@example.com,+1-555-9351,Yes,Excellent,D02,SAVE10
+524,,478.27,female,Paris,Premium,97.0,,user523@example.com,+1-555-9980,none,Unknown,D04,SAVE10
+525,35.0,432.44,Male,Tokyo,Premium,84.0,2021-06-08,user524@example.com,+1-555-9635,,Average,D04,
+526,75.0,406.66,female,New York,Basic,77.0,2021-06-09,user525@example.com,+1-555-8556,No,Average,D04,
+527,18.0,331.07,female,Berlin,NONE,77.0,2021-06-10,user526@example.com,+1-555-5498,,Good,D01,SAVE20
+528,76.0,279.92,female,Paris,Free,89.0,2021-06-11,user527@example.com,+1-555-5726,False,ok,D02,
+529,,,male,Tokyo,Basic,82.0,2021-06-12,user528@example.com,+1-555-3152,none,Average,D02,
+530,74.0,210.14,F,Tokyo,,77.0,2021-06-13,user529@example.com,+1-555-5909,False,Good,D01,SAVE20
+531,58.0,192.62,M,Tokyo,Free,55.0,2021-06-14,user530@example.com,+1-555-9095,No,Good,D01,
+532,17.0,137.28,M,Tokyo,Basic,115.0,2021-06-15,user531@example.com,+1-555-8473,none,Excellent,D01,SAVE10
+533,7.0,364.48,Male,,NONE,53.0,2021-06-16,user532@example.com,+1-555-6416,True,Average,D02,
+534,46.0,252.98,female,Berlin,Basic,65.0,2021-06-17,user533@example.com,+1-555-5067,True,Good,D02,
+535,13.0,49.71,Male,Paris,Premium,45.0,01/01/2020,user534@example.com,+1-555-6867,Yes,Excellent,D04,SAVE20
+536,40.0,117.89,male,Tokyo,Basic,78.0,2021-06-19,user535@example.com,+1-555-1684,No,Poor,D04,SAVE20
+537,42.0,344.8,male,London,Free,72.0,2021-06-20,user536@example.com,+1-555-8684,True,Excellent,D02,SAVE10
+538,9.0,47.3,Female,London,Premium,81.0,2021-06-21,user537@example.com,+1-555-9289,none,Excellent,D04,SAVE10
+539,50.0,427.09,male,Paris,Basic,43.0,2021-06-22,user538@example.com,+1-555-8047,No,Good,D01,
+540,27.0,252.62,Female,New York,Premium,86.0,2021-06-23,user539@example.com,+1-555-7381,,Unknown,D03,
+541,66.0,245.49,F,New York,Free,57.0,2021-06-24,user540@example.com,+1-555-6297,False,,D04,
+542,5.0,300.28,Male,New York,Free,67.0,2021-06-25,user541@example.com,+1-555-6958,none,ok,D02,
+543,29.0,414.09,F,London,Premium,83.0,2021-06-26,user542@example.com,+1-555-1483,False,Unknown,D04,
+544,37.0,180.43,male,New York,Basic,73.0,2021-06-27,user543@example.com,+1-555-2151,False,Excellent,D04,
+545,38.0,342.23,F,Berlin,Premium,74.0,2021-06-28,user544@example.com,+1-555-8068,No,ok,D04,SAVE20
+546,,287.21,F,  Tokyo ,Basic,81.0,2021-06-29,user545@example.com,+1-555-9858,,Good,D03,SAVE10
+547,8.0,140.84,F,London,Premium,76.0,2021-06-30,user546@example.com,+1-555-7548,Yes,Average,D01,WELCOME50
+548,65.0,440.53,male,Paris,Free,64.0,2021-07-01,user547@example.com,+1-555-7031,False,Excellent,D02,
+549,17.0,400.74,female,Paris,Basic,67.0,2021-07-02,user548@example.com,+1-555-3587,Yes,Excellent,D03,
+550,71.0,332.64,F,Tokyo,Basic,73.0,,user549@example.com,+1-555-1468,False,ok,D02,WELCOME50
+551,45.0,426.79,Female,London,Basic,56.0,2021-07-04,user550@example.com,+1-555-3437,Yes,Good,D02,SAVE10
+552,4.0,434.97,male,New York,Basic,84.0,2021-07-05,user551@example.com,+1-555-5636,Yes,Poor,D02,WELCOME50
+553,36.0,357.1,F,New York,Basic,74.0,2021-07-06,user552@example.com,+1-555-1498,1,Excellent,D03,SAVE10
+554,70.0,420.14,female,Berlin,Free,71.0,2021-07-07,user553@example.com,+1-555-8252,Yes,Poor,D01,
+555,31.0,351.76,male,Berlin,Premium,87.0,2021-07-08,user554@example.com,+1-555-9368,No,Poor,D02,SAVE10
+556,19.0,343.27,M,New York,Free,68.0,2021-07-09,user555@example.com,+1-555-5779,Yes,Unknown,D01,
+557,61.0,313.12,female,Paris,Basic,67.0,2021-07-10,user556@example.com,+1-555-3083,False,Good,D01,WELCOME50
+558,54.0,378.83,Female,Paris,Basic,62.0,2021-07-11,user557@example.com,+1-555-1311,Yes,Poor,D04,
+559,39.0,87.72,,Berlin,Premium,75.0,2021-07-12,user558@example.com,+1-555-7370,True,Good,D03,
+560,74.0,441.63,M,Tokyo,,74.0,2021-07-13,user559@example.com,+1-555-3746,0,Unknown,D03,WELCOME50
+561,19.0,437.2,M,New York,NONE,60.0,2021-07-14,user560@example.com,+1-555-1882,False,Good,D04,SAVE10
+562,39.0,24.33,male,Berlin,Basic,67.0,2021-07-15,user561@example.com,+1-555-2399,True,Excellent,D04,
+563,67.0,414.65,M,Berlin,Free,60.0,2021-07-16,user562@example.com,+1-555-6939,False,Poor,D01,SAVE10
+564,45.0,73.15,Female,New York,Basic,59.0,2021-07-17,user563@example.com,+1-555-4233,No,Good,D02,SAVE10
+565,13.0,174.21,Female,New York,Basic,44.0,2021-07-18,user564@example.com,+1-555-8348,0,Average,D03,
+566,58.0,374.32,Male,Paris,Basic,66.0,2021-07-19,user565@example.com,+1-555-6360,0,Good,D02,
+567,20.0,88.77,Female,Tokyo,Free,44.0,2021-07-20,user566@example.com,+1-555-8329,No,Poor,D02,SAVE20
+568,72.0,410.8,female,Tokyo,Basic,63.0,2021-07-21,user567@example.com,+1-555-7391,0,,D04,
+569,61.0,417.75,M,New York,Free,60.0,01/01/2020,user568@example.com,+1-555-8881,No,Unknown,D02,
+570,39.0,258.66,Female,London,Free,85.0,2021-07-23,user569@example.com,+1-555-3781,True,Poor,D01,
+571,1.0,13.13,male,Berlin,Basic,54.0,2021-07-24,user570@example.com,+1-555-9640,1,Excellent,D04,
+572,3.0,150.65,Male,Berlin,,58.0,2021-07-25,user571@example.com,+1-555-5878,False,Excellent,D02,
+573,77.0,312.29,M,,Free,64.0,2021-07-26,user572@example.com,+1-555-6181,No,Unknown,D04,WELCOME50
+574,62.0,490.78,Male,London,Basic,61.0,2021-07-27,user573@example.com,+1-555-1608,False,Unknown,D01,
+575,,319.59,,,Basic,90.0,2021-07-28,user574@example.com,+1-555-2120,True,Poor,D01,
+576,25.0,137.3,male,New York,Free,52.0,2021-07-29,user575@example.com,+1-555-5148,1,Excellent,D02,WELCOME50
+577,56.0,320.66,Male,New York,Basic,64.0,2021-07-30,user576@example.com,+1-555-4771,True,Unknown,D04,WELCOME50
+578,33.0,274.59,F,Berlin,Basic,74.0,2021-07-31,user577@example.com,+1-555-7218,0,Excellent,D02,
+579,38.0,392.12,female,New York,Basic,83.0,2021-08-01,user578@example.com,+1-555-3213,False,Unknown,D02,SAVE20
+580,6.0,62.42,female,New York,Basic,64.0,2021-08-02,user579@example.com,+1-555-8382,none,Good,D04,SAVE10
+581,58.0,382.9,M,New York,Premium,41.0,2021-08-03,user580@example.com,+1-555-6337,1,Average,D02,SAVE20
+582,44.0,275.22,F,Berlin,Free,67.0,2021-08-04,user581@example.com,+1-555-7112,0,ok,D01,
+583,45.0,481.87,Male,Paris,Basic,90.0,2021-08-05,user582@example.com,+1-555-2066,1,Good,D04,
+584,32.0,177.52,F,Paris,Basic,74.0,2021-08-06,user583@example.com,+1-555-3184,0,ok,D04,WELCOME50
+585,45.0,319.98,F,,Free,73.0,2021-08-07,user584@example.com,+1-555-9129,True,,D04,
+586,61.0,466.69,Male,Berlin,Basic,54.0,2021-08-08,user585@example.com,+1-555-3073,No,Average,D04,SAVE10
+587,47.0,60.23,male,Paris,Basic,52.0,2021-08-09,user586@example.com,+1-555-8347,False,Average,D02,
+588,21.0,469.24,F,Paris,Basic,70.0,2021-08-10,user587@example.com,+1-555-5482,Yes,Unknown,D02,
+589,80.0,347.06,F,Paris,Premium,48.0,2021-08-11,user588@example.com,+1-555-8407,Yes,Unknown,D01,
+590,75.0,43.24,male,Berlin,Premium,81.0,2021-08-12,user589@example.com,+1-555-4309,True,Excellent,D03,
+591,36.0,157.47,F,Berlin,Basic,57.0,2021-08-13,user590@example.com,+1-555-6060,False,Unknown,D03,
+592,19.0,357.0,F,New York,Basic,69.0,2021-08-14,user591@example.com,+1-555-4848,False,Poor,D01,
+593,20.0,43.0,F,Tokyo,Free,41.0,2021-08-15,user592@example.com,+1-555-5730,True,Unknown,D03,
+594,57.0,295.26,female,Paris,Basic,64.0,2021-08-16,user593@example.com,+1-555-4064,False,Poor,D01,
+595,18.0,179.48,Female,Tokyo,Free,52.0,2021-08-17,user594@example.com,+1-555-5191,No,Unknown,D02,
+596,47.0,314.25,male,Berlin,,35.0,2021-08-18,user595@example.com,+1-555-5783,True,Excellent,D04,
+597,49.0,32.41,F,Berlin,Basic,78.0,2021-08-19,user596@example.com,+1-555-3240,No,Poor,D04,
+598,14.0,437.05,female,Berlin,Basic,94.0,2021-08-20,user597@example.com,+1-555-9441,False,Good,D02,
+599,15.0,487.01,male,Tokyo,Premium,86.0,01/01/2020,user598@example.com,+1-555-3058,True,Poor,D04,SAVE10
+600,31.0,484.75,M,Berlin,Basic,80.0,2021-08-22,user599@example.com,+1-555-3476,False,Excellent,D04,SAVE20
+601,1.0,377.33,M,New York,Basic,63.0,2021-08-23,user600@example.com,+1-555-8063,True,ok,D03,SAVE10
+602,54.0,73.74,F,Berlin,Free,82.0,2021-08-24,user601@example.com,+1-555-6410,False,Poor,D02,
+603,3.0,381.55,female,London,Basic,88.0,2021-08-25,user602@example.com,+1-555-8612,No,Unknown,,WELCOME50
+604,16.0,22.05,female,Tokyo,Basic,72.0,2021-08-26,user603@example.com,+1-555-9886,none,Unknown,D03,
+605,57.0,20.84,male,London,Basic,52.0,2021-08-27,user604@example.com,+1-555-5540,No,ok,D04,SAVE20
+606,75.0,168.57,male,Berlin,Basic,62.0,2021-08-28,user605@example.com,+1-555-3734,False,Excellent,D04,
+607,12.0,249.44,,New York,Premium,95.0,2021-08-29,user606@example.com,+1-555-7550,True,Average,D02,SAVE20
+608,74.0,387.5,male,Paris,Free,68.0,2021-08-30,,+1-555-4138,Yes,,D04,SAVE20
+609,16.0,344.81,female,Berlin,Free,20.0,2021-08-31,user608@example.com,+1-555-8356,No,Good,D04,WELCOME50
+610,72.0,228.49,Female,New York,Basic,47.0,2021-09-01,user609@example.com,,No,Unknown,D02,
+611,76.0,144.08,female,Tokyo,Basic,63.0,2021-09-02,user610@example.com,+1-555-6175,,Poor,D04,WELCOME50
+612,24.0,498.59,M,London,Premium,85.0,2021-09-03,user611@example.com,+1-555-6210,Yes,Poor,D03,
+613,28.0,218.83,male,London,Basic,65.0,2021-09-04,,+1-555-1726,False,Good,D02,SAVE20
+614,8.0,231.18,female,London,BASIC,85.0,2021-09-05,user613@example.com,+1-555-9732,none,Unknown,D04,
+615,36.0,90.18,female,Tokyo,Free,62.0,2021-09-06,user614@example.com,+1-555-5751,True,Excellent,D01,
+616,8.0,399.46,male,New York,Premium,40.0,2021-09-07,user615@example.com,+1-555-9049,0,Good,D02,SAVE20
+617,58.0,349.9,Female,Tokyo,Basic,62.0,2021-09-08,user616@example.com,+1-555-1204,False,Unknown,D02,
+618,60.0,118.18,,London,Free,75.0,2021-09-09,user617@example.com,+1-555-6192,1,Excellent,D01,
+619,50.0,50.37,male,Berlin,Premium,73.0,2021-09-10,user618@example.com,+1-555-5657,none,Poor,D04,SAVE10
+620,28.0,343.44,Male,Paris,Basic,51.0,2021-09-11,user619@example.com,+1-555-5412,No,Excellent,D04,
+621,41.0,330.71,male,,Premium,64.0,2021-09-12,user620@example.com,+1-555-3152,1,ok,D02,
+622,64.0,143.9,,Tokyo,Basic,110.0,2021-09-13,user621@example.com,+1-555-8840,No,Average,D02,
+623,27.0,475.92,Female,New York,Basic,51.0,2021-09-14,user622@example.com,+1-555-2494,No,Excellent,D04,
+624,63.0,84.02,Female,New York,Free,79.0,2021-09-15,user623@example.com,+1-555-7134,1,Average,D04,WELCOME50
+625,17.0,221.84,male,Tokyo,Basic,38.0,2021-09-16,user624@example.com,+1-555-6431,none,Excellent,D03,
+626,73.0,472.37,male,London,Free,82.0,2021-09-17,user625@example.com,+1-555-4993,1,Average,D02,
+627,,215.67,male,Paris,Free,56.0,2021-09-18,user626@example.com,+1-555-1561,False,ok,D02,SAVE20
+628,84.0,322.88,Female,New York,Basic,76.0,2021-09-19,user627@example.com,+1-555-2200,0,Poor,D01,
+629,77.0,204.82,male,London,Basic,50.0,2021-09-20,,+1-555-3386,0,,D03,SAVE20
+630,29.0,144.37,male,Berlin,Basic,74.0,2021-09-21,user629@example.com,+1-555-8600,1,Average,D04,
+631,13.0,492.15,F,New York,Basic,56.0,2021-09-22,user630@example.com,+1-555-2812,False,ok,D03,SAVE10
+632,46.0,,Male,London,Basic,59.0,2021-09-23,user631@example.com,+1-555-4211,0,Average,D04,WELCOME50
+633,35.0,448.11,M,London,Free,76.0,01/01/2020,user632@example.com,+1-555-6391,False,Poor,D04,
+634,6.0,122.68,,Paris,Free,63.0,2021-09-25,user633@example.com,+1-555-3221,False,Average,D03,
+635,82.0,114.42,F,Paris,Basic,75.0,2021-09-26,user634@example.com,+1-555-9815,No,ok,D02,
+636,69.0,25.26,M,Berlin,Free,67.0,2021-09-27,user635@example.com,+1-555-2363,0,ok,D04,WELCOME50
+637,47.0,329.32,male,London,Free,71.0,2021-09-28,user636@example.com,+1-555-2352,0,Good,D03,WELCOME50
+638,25.0,190.58,F,London,Basic,76.0,2021-09-29,user637@example.com,+1-555-9569,No,Poor,,SAVE20
+639,66.0,433.54,male,Paris,Basic,64.0,2021-09-30,user638@example.com,+1-555-9884,1,Good,D03,
+640,10.0,241.87,Female,,Free,55.0,2021-10-01,user639@example.com,+1-555-8954,No,Poor,D01,
+641,56.0,484.41,female,New York,Basic,62.0,2021-10-02,user640@example.com,+1-555-7775,0,Average,D04,WELCOME50
+642,30.0,100.91,F,Tokyo,Basic,87.0,2021-10-03,user641@example.com,+1-555-9779,0,ok,D03,WELCOME50
+643,5.0,435.63,Female,Paris,,71.0,2021-10-04,user642@example.com,+1-555-3567,none,Good,D03,
+644,33.0,390.53,F,Tokyo,Premium,57.0,2021-10-05,user643@example.com,+1-555-5377,1,Average,D01,
+645,65.0,387.75,F,Paris,Basic,76.0,2021-10-06,user644@example.com,+1-555-7617,No,ok,D03,
+646,18.0,423.94,Female,Berlin,Basic,77.0,2021-10-07,user645@example.com,+1-555-1991,,Poor,D03,SAVE20
+647,49.0,382.9,M,London,Free,77.0,2021-10-08,user646@example.com,+1-555-1436,True,ok,D04,WELCOME50
+648,11.0,316.85,Male,Berlin,Free,55.0,2021-10-09,user647@example.com,,1,Average,D03,SAVE20
+649,26.0,74.31,male,Paris,Basic,59.0,2021-10-10,user648@example.com,+1-555-5679,No,Good,D02,SAVE10
+650,63.0,25.94,F,London,Premium,59.0,2021-10-11,user649@example.com,+1-555-4478,No,Good,D01,
+651,59.0,461.22,male,New York,Premium,64.0,2021-10-12,user650@example.com,+1-555-8362,False,ok,D03,
+652,27.0,312.16,female,New York,Premium,78.0,2021-10-13,user651@example.com,+1-555-2624,0,Average,D01,
+653,49.0,400.3,Female,Tokyo,Basic,74.0,2021-10-14,user652@example.com,+1-555-8327,Yes,Excellent,D01,
+654,77.0,245.95,male,Paris,Premium,75.0,2021-10-15,user653@example.com,+1-555-9517,none,Poor,D01,WELCOME50
+655,33.0,67.48,Female,Paris,Basic,90.0,2021-10-16,user654@example.com,+1-555-1592,1,Poor,D03,
+656,1.0,71.34,male,New York,Basic,80.0,2021-10-17,user655@example.com,,Yes,Average,,WELCOME50
+657,21.0,345.93,Male,Berlin,Basic,67.0,2021-10-18,user656@example.com,+1-555-9968,Yes,Excellent,D01,
+658,55.0,,Male,London,Basic,52.0,2021-10-19,user657@example.com,+1-555-8963,1,Good,D02,
+659,6.0,108.26,,Berlin,Free,59.0,2021-10-20,user658@example.com,+1-555-3826,No,,D01,
+660,81.0,250.88,Male,Berlin,Basic,66.0,2021-10-21,user659@example.com,+1-555-9651,1,Unknown,D02,WELCOME50
+661,69.0,41.46,Male,New York,Premium,82.0,2021-10-22,user660@example.com,+1-555-4972,Yes,Unknown,D01,
+662,5.0,295.17,Male,New York,Basic,69.0,2021-10-23,user661@example.com,+1-555-9171,0,Excellent,D04,
+663,3.0,141.81,Female,New York,Premium,60.0,2021-10-24,user662@example.com,+1-555-6461,none,Excellent,D01,
+664,53.0,400.8,F,Tokyo,PREMIUM,59.0,2021-10-25,user663@example.com,+1-555-6876,none,Poor,D01,
+665,23.0,162.08,male,Berlin,Free,68.0,2021-10-26,user664@example.com,+1-555-9148,0,Good,D03,WELCOME50
+666,53.0,233.06,Male,Paris,Premium,83.0,2021-10-27,user665@example.com,+1-555-3860,0,ok,D02,SAVE20
+667,37.0,15.69,Female,London,Free,93.0,2021-10-28,user666@example.com,+1-555-8227,No,Excellent,D04,
+668,74.0,45.5,Female,Tokyo,,66.0,2021-10-29,user667@example.com,+1-555-6781,True,ok,D02,SAVE20
+669,74.0,202.32,Female,Paris,Basic,69.0,2021-10-30,user668@example.com,+1-555-6057,1,Unknown,D04,
+670,83.0,,F,Berlin,Premium,51.0,2021-10-31,user669@example.com,+1-555-2152,none,ok,D01,
+671,17.0,304.01,male,New York,Basic,99.0,2021-11-01,user670@example.com,+1-555-7374,,Good,D03,
+672,78.0,152.91,F,Berlin,Premium,48.0,2021-11-02,user671@example.com,+1-555-3427,1,Good,D03,SAVE20
+673,73.0,350.54,M,,Basic,87.0,2021-11-03,user672@example.com,+1-555-1173,none,ok,D02,
+674,,431.46,Female,Tokyo,Premium,64.0,2021-11-04,user673@example.com,+1-555-7815,0,Average,D03,SAVE20
+675,51.0,392.13,M,Tokyo,Premium,61.0,2021-11-05,user674@example.com,+1-555-3494,none,Excellent,D02,
+676,45.0,29.41,female,London,Premium,53.0,2021-11-06,user675@example.com,+1-555-3410,No,Average,D02,WELCOME50
+677,77.0,245.45,Male,Paris,Premium,106.0,2021-11-07,user676@example.com,+1-555-6158,True,ok,D04,
+678,4.0,61.42,Male,Paris,Premium,73.0,2021-11-08,user677@example.com,+1-555-7279,True,Excellent,D02,SAVE10
+679,62.0,128.6,F,Tokyo,Premium,70.0,2021-11-09,user678@example.com,+1-555-2902,0,Poor,,
+680,65.0,493.46,male,Tokyo,Premium,83.0,2021-11-10,user679@example.com,+1-555-3693,none,Average,D03,WELCOME50
+681,32.0,79.82,M,New York,Premium,60.0,2021-11-11,user680@example.com,+1-555-7396,No,Average,D02,WELCOME50
+682,34.0,254.46,male,Paris,Premium,70.0,2021-11-12,user681@example.com,+1-555-1562,False,ok,D02,WELCOME50
+683,72.0,312.9,F,London,Basic,70.0,2021-11-13,user682@example.com,+1-555-3960,1,Unknown,D01,
+684,39.0,354.21,Male,Paris,Free,62.0,2021-11-14,user683@example.com,+1-555-2802,1,ok,D02,
+685,26.0,284.23,male,New York,Premium,87.0,2021-11-15,user684@example.com,+1-555-8748,Yes,Average,D02,
+686,34.0,14.79,male,  Tokyo ,Free,66.0,2021-11-16,user685@example.com,+1-555-5376,No,Excellent,,
+687,54.0,169.97,Male,Tokyo,Premium,46.0,,user686@example.com,+1-555-2276,none,Unknown,D01,SAVE20
+688,3.0,263.68,M,New York,Premium,65.0,2021-11-18,user687@example.com,+1-555-7977,Yes,ok,D03,
+689,50.0,53.05,Male,  London ,Basic,73.0,2021-11-19,user688@example.com,+1-555-8176,0,ok,,
+690,12.0,181.81,male,Tokyo,Basic,56.0,2021-11-20,user689@example.com,,none,Average,D03,SAVE20
+691,65.0,26.27,M,Berlin,,57.0,2021-11-21,user690@example.com,+1-555-1885,Yes,Average,D03,
+692,54.0,48.5,M,Tokyo,Basic,61.0,2021-11-22,user691@example.com,+1-555-5192,True,Poor,D01,SAVE20
+693,5.0,204.49,Male,Berlin,Free,88.0,2021-11-23,user692@example.com,+1-555-6545,1,ok,D04,
+694,57.0,75.03,male,New York,Basic,62.0,2021-11-24,user693@example.com,+1-555-5434,none,Average,D03,
+695,17.0,288.1,F,New York,Basic,91.0,2021-11-25,user694@example.com,+1-555-5683,Yes,Good,D04,
+696,47.0,347.84,male,Tokyo,Basic,60.0,2021-11-26,user695@example.com,+1-555-9662,True,Unknown,D02,
+697,23.0,402.29,Female,Paris,Basic,74.0,2021-11-27,user696@example.com,+1-555-3708,No,Good,D01,
+698,79.0,108.07,female,Berlin,Free,63.0,2021-11-28,user697@example.com,+1-555-6607,Yes,Unknown,D02,SAVE10
+699,14.0,92.07,F,London,Basic,81.0,2021-11-29,user698@example.com,+1-555-7228,0,ok,D02,SAVE20
+700,66.0,61.24,M,Tokyo,Premium,53.0,2021-11-30,user699@example.com,+1-555-6483,0,,D01,
+701,75.0,321.85,F,London,Free,81.0,2021-12-01,user700@example.com,+1-555-8469,0,Average,D02,
+702,51.0,356.17,M,Tokyo,Free,71.0,2021-12-02,user701@example.com,+1-555-7847,none,Average,D01,WELCOME50
+703,38.0,25.48,M,Paris,,60.0,2021-12-03,user702@example.com,+1-555-3167,1,Average,D04,WELCOME50
+704,64.0,468.74,F,  Paris ,Basic,67.0,2021-12-04,user703@example.com,,Yes,ok,D02,
+705,38.0,35.47,M,Paris,Premium,93.0,2021-12-05,user704@example.com,+1-555-5031,No,Unknown,D01,
+706,,,M,Paris,Basic,72.0,2021-12-06,user705@example.com,+1-555-2659,Yes,Average,D03,
+707,82.0,357.44,Female,New York,NONE,59.0,2021-12-07,user706@example.com,+1-555-2821,1,Good,D02,
+708,30.0,436.77,male,New York,Basic,51.0,2021-12-08,user707@example.com,+1-555-5324,True,Average,D04,WELCOME50
+709,79.0,359.9,male,Berlin,Free,77.0,2021-12-09,user708@example.com,+1-555-6074,1,ok,D01,
+710,51.0,402.85,female,London,Basic,72.0,2021-12-10,user709@example.com,+1-555-4165,0,Poor,D02,
+711,63.0,176.33,female,Tokyo,Basic,,2021-12-11,user710@example.com,+1-555-1143,none,Good,D02,
+712,52.0,409.26,Female,Tokyo,Basic,48.0,2021-12-12,user711@example.com,+1-555-3800,True,Average,D02,SAVE20
+713,38.0,49.26,female,,Basic,52.0,2021-12-13,user712@example.com,+1-555-1793,none,Average,D04,SAVE20
+714,79.0,448.46,F,Tokyo,Free,87.0,2021-12-14,user713@example.com,+1-555-2868,0,Excellent,D01,
+715,30.0,278.32,Male,New York,Premium,74.0,2021-12-15,user714@example.com,+1-555-5341,False,Unknown,D03,
+716,200.0,410.48,Male,Berlin,Premium,78.0,2021-12-16,user715@example.com,+1-555-7961,1,Good,D03,
+717,81.0,231.64,Male,London,Basic,55.0,2021-12-17,user716@example.com,+1-555-5612,1,Excellent,D03,SAVE20
+718,5.0,325.35,Female,Berlin,Basic,55.0,2021-12-18,,+1-555-8178,No,Poor,D01,
+719,29.0,267.94,Female,Paris,FREE,84.0,2021-12-19,user718@example.com,+1-555-4159,Yes,Unknown,D03,
+720,4.0,368.48,M,Paris,Basic,85.0,2021-12-20,user719@example.com,+1-555-4402,True,Good,D04,
+721,10.0,50.0,Male,Paris,Basic,53.0,2021-12-21,user720@example.com,+1-555-2359,none,Unknown,D01,
+722,56.0,39.57,F,Berlin,Premium,50.0,2021-12-22,user721@example.com,+1-555-4374,True,Good,D02,
+723,17.0,131.08,female,Tokyo,Free,68.0,2021-12-23,user722@example.com,+1-555-2851,No,Average,D04,
+724,74.0,88.18,F,London,FREE,58.0,2021-12-24,user723@example.com,+1-555-8525,No,Unknown,D02,WELCOME50
+725,17.0,437.17,female,Paris,Free,57.0,2021-12-25,user724@example.com,,none,Average,D03,
+726,84.0,117.41,Male,Paris,Premium,51.0,2021-12-26,user725@example.com,+1-555-1593,Yes,Poor,D04,SAVE10
+727,69.0,488.17,Male,Paris,Premium,62.0,2021-12-27,user726@example.com,+1-555-2586,none,ok,D01,
+728,34.0,175.08,Male,London,Premium,52.0,2021-12-28,user727@example.com,+1-555-2451,none,Average,D04,
+729,6.0,99.24,Female,Paris,Premium,53.0,2021-12-29,user728@example.com,+1-555-4366,0,Poor,D02,
+730,53.0,396.95,female,London,Premium,74.0,2021-12-30,user729@example.com,+1-555-1471,Yes,ok,D01,
+731,66.0,332.77,Female,Paris,Basic,69.0,2021-12-31,user730@example.com,+1-555-3712,1,Unknown,D04,WELCOME50
+732,77.0,254.12,Female,Berlin,Basic,77.0,2022-01-01,user731@example.com,+1-555-9580,0,Unknown,D04,SAVE10
+733,43.0,282.13,male,Berlin,Free,45.0,2022-01-02,user732@example.com,+1-555-1850,False,Good,D04,
+734,75.0,362.41,F,London,Basic,70.0,2022-01-03,user733@example.com,+1-555-6447,Yes,Poor,D04,SAVE20
+735,23.0,121.94,F,Berlin,Free,101.0,2022-01-04,user734@example.com,+1-555-9892,No,Poor,D01,WELCOME50
+736,55.0,498.2,M,London,Basic,64.0,2022-01-05,user735@example.com,+1-555-6681,0,Excellent,D02,SAVE20
+737,80.0,487.65,Female,Berlin,Premium,82.0,2022-01-06,user736@example.com,+1-555-7412,Yes,Excellent,D04,
+738,75.0,328.66,female,Berlin,Basic,82.0,2022-01-07,user737@example.com,+1-555-2642,True,ok,D01,
+739,16.0,107.78,male,London,Free,82.0,01/01/2020,user738@example.com,+1-555-6160,none,ok,D02,
+740,8.0,343.31,male,Tokyo,Free,72.0,2022-01-09,user739@example.com,+1-555-7331,False,Excellent,D04,
+741,4.0,45.38,F,Berlin,Basic,78.0,2022-01-10,user740@example.com,+1-555-4899,1,ok,D02,WELCOME50
+742,4.0,25.02,Female,Paris,Basic,80.0,,user741@example.com,+1-555-2594,none,Average,D02,
+743,56.0,136.26,M,Tokyo,Premium,79.0,2022-01-12,user742@example.com,+1-555-2944,True,Excellent,D01,
+744,25.0,236.69,Female,London,Premium,53.0,2022-01-13,user743@example.com,+1-555-9125,True,Poor,D02,
+745,67.0,,Male,Tokyo,Free,44.0,2022-01-14,user744@example.com,+1-555-9310,False,Average,D01,
+746,67.0,366.31,Female,New York,Basic,46.0,2022-01-15,user745@example.com,+1-555-3983,1,ok,D04,
+747,27.0,373.93,,New York,Basic,65.0,2022-01-16,user746@example.com,+1-555-1448,No,,D02,
+748,32.0,218.49,Male,Berlin,Basic,78.0,2022-01-17,user747@example.com,+1-555-1254,0,Good,D02,
+749,50.0,179.51,M,Berlin,Basic,53.0,2022-01-18,user748@example.com,+1-555-2264,1,Excellent,D03,
+750,61.0,191.81,female,Paris,Premium,83.0,01/01/2020,user749@example.com,+1-555-9383,Yes,Unknown,D04,SAVE10
+751,66.0,286.77,Male,New York,Basic,86.0,2020-09-17,user260@example.com,+1-555-9371,none,Poor,D03,
+752,52.0,90.19,M,Tokyo,Basic,76.0,01/01/2020,user131@example.com,+1-555-9519,0,ok,D03,SAVE10
+753,9.0,38.34,F,Tokyo,Premium,86.0,2021-05-17,user502@example.com,+1-555-6157,1,Average,D01,
+754,12.0,122.33,Male,London,Basic,62.0,2020-06-27,user178@example.com,+1-555-3435,Yes,Good,D04,SAVE20
+755,10.0,242.36,Male,Tokyo,,54.0,2021-03-03,user427@example.com,+1-555-6206,1,Unknown,D01,
+756,63.0,25.94,F,London,Premium,59.0,2021-10-11,user649@example.com,+1-555-4478,No,Good,D01,
+757,60.0,67.7,male,New York,Basic,70.0,2020-12-06,user340@example.com,+1-555-2234,1,ok,D02,
+758,57.0,450.79,male,New York,Basic,82.0,2020-05-27,user147@example.com,+1-555-8248,0,ok,D03,
+759,9.0,320.4,F,Paris,Premium,58.0,2020-11-26,user330@example.com,+1-555-3250,True,ok,D03,SAVE10
+760,51.0,229.23,male,Paris,Basic,61.0,2020-02-07,user37@example.com,+1-555-4198,Yes,Average,D04,
+761,19.0,337.36,Female,Tokyo,Free,59.0,2020-10-23,user296@example.com,+1-555-2459,No,Unknown,D01,SAVE20

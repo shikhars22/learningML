@@ -5,5 +5,3 @@ ml_book/_build/
 .venv/
 env/
 venv/
-*.png
-*.csv
