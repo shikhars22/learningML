@@ -1,0 +1,9 @@
+.ipynb_checkpoints/
+__pycache__/
+.tmp/
+ml_book/_build/
+.venv/
+env/
+venv/
+*.png
+*.csv
