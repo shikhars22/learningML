@@ -16,27 +16,32 @@ learningML/
 
 ## 🧠 Learning Journey
 
+> **Looking for code examples?** Check out the comprehensive [Master Cheatsheet](directives/Master_Cheatsheet.md) covering all these concepts!
+
 ### 1. Data Cleaning
-- Handling duplicates and inconsistent string casing.
-- Standardizing categorical values (e.g., Gender mapping).
+- **Handling Duplicates**: Understanding the critical difference between **Exact Clones** `dataset.duplicated()` and **Semantic Duplicates** `dataset.duplicated(subset=...)` (where identical people have different IDs).
+- Standardizing categorical values (e.g., gender mapping) and fixing inconsistent string casing.
 
-### 2. Missing Values
+### 2. Missing Values (Imputation)
 - Strategic filling of null values using **Mean**, **Median**, and **Mode**.
-- Understanding why the **Median** is safer when outliers are present.
+- Understanding why the **Median** is mathematically safer when outliers are present.
 
-### 3. Encoding
+### 3. Handling Outliers
+- Identification using **IQR (Interquartile Range)** for unknown distributions and **Z-Scores** (SciPy) for normal distributions.
+- Visualizing outliers with Box Plots, clipping vs. trimming strategies.
+
+### 4. Detecting Skewness
+- Assessing whether data has a positive/negative skew using visual (KDE plots) and statistical methods (`.skew()`).
+- Using Skewness to determine the correct scaling algorithm.
+
+### 5. Feature Encoding
 - **One-Hot Encoding**: Used for nominal data like 'Gender' and 'IsActive'.
 - **Ordinal Encoding**: Used for ordered data like 'Subscription' tiers.
 
-### 4. Outlier Handling
-- Identification using **IQR (Interquartile Range)** and **Z-Scores**.
-- Visualizing outliers with Box Plots and Distribution curves.
-- Strategies for **Trimming** vs. **Capping**.
-
-### 5. Feature Scaling
-- **Standardization**: Centering data at 0 with 1 standard deviation.
-- **Normalization**: Squashing data into a 0 to 1 range.
-- Importance of the "Order of Operations" (Impute -> Clean Outliers -> Scale).
+### 6. Feature Scaling
+- **Standardization (StandardScaler)**: Centering data at 0 with 1 standard deviation. Best for normally distributed data.
+- **Normalization (MinMaxScaler)**: Squashing data into a 0 to 1 range. Best for skewed data.
+- The vital importance of the **Order of Operations** (Impute -> Clean Outliers -> Scale).
 
 ## 🛠️ Tech Stack
 - **Python 3.x**
