@@ -1,4 +1,4 @@
-# Data Preprocessing & Cleaning Master Cheatsheet 🚀
+# Data Preprocessing & Cleaning Master Cheat sheet 🚀
 
 This document summarizes all the concepts, strategies, and code implementations covered in our Machine Learning data preparation journey. 
 
@@ -64,7 +64,51 @@ dataset_clean['Subscription'] = dataset_clean['Subscription'].fillna(mode_value)
 
 ---
 
-## 4. Handling Outliers 🌪️
+## 4. Replacing and Mapping Values 🔄
+
+### The Concept
+Sometimes data is inconsistent (e.g., "M" vs "Male"). We use mapping to standardize these values.
+*   **Targeted Replace**: Changing specific strings to others.
+*   **Dictionary Mapping**: Using a map to force a set of values into a standard.
+
+### The Code
+```python
+# 1. Using a Dictionary Map (Professional Standard)
+gender_mapping = {'M': 'Male', 'm': 'Male', 'F': 'Female', 'f': 'Female'}
+dataset_clean['Gender'] = dataset_clean['Gender'].map(gender_mapping).fillna(dataset_clean['Gender'])
+
+# 2. Global Replace
+dataset_clean['Subscription'] = dataset_clean['Subscription'].replace(['BASIC', 'basic'], 'Basic')
+```
+
+---
+
+# 5. Changing Data Types (Casting) 🔢➡️🔠
+
+### The Concept
+Pandas might load a numeric column as an `object` (string) if there's a typo in the file. We must cast types to ensure math operations work.
+*   **Type Casting**: Forcing a column to be `float`, `int`, or `datetime`.
+*   **Check First**: Always use `df.dtypes` to see current types.
+
+### The Code
+```python
+# 1. Force to Numeric (errors='coerce' turns typos into NaNs)
+dataset_clean['Score'] = pd.to_numeric(dataset_clean['Score'], errors='coerce')
+
+# 2. Batch Casting
+dataset_clean = dataset_clean.astype({
+    'Age': 'int32',
+    'IsActive': 'bool'
+})
+
+# 3. String to Datetime
+# dataset_clean['SignupDate'] = pd.to_datetime(dataset_clean['SignupDate'])
+```
+
+---
+
+# 6. Handling Outliers 🌪️
+
 
 ### The Concept
 Outliers are extreme values (like a 200-year-old person) that can ruin average calculations and ruin scaling algorithms.

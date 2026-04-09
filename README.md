@@ -16,13 +16,15 @@ learningML/
 
 ## 🧠 Learning Journey
 
-> **Looking for code examples?** Check out the comprehensive [Master Cheatsheet](directives/Master_Cheatsheet.md) covering all these concepts!
+> **Looking for code examples?** Check out the comprehensive [Pre-Processing Master Cheatsheet](directives/Pre-Processing_Master_Cheatsheet.md) covering all these concepts!
 
 ### 1. Data Cleaning
-- **Handling Duplicates**: Understanding the critical difference between **Exact Clones** `dataset.duplicated()` and **Semantic Duplicates** `dataset.duplicated(subset=...)` (where identical people have different IDs).
-- Standardizing categorical values (e.g., gender mapping) and fixing inconsistent string casing.
+- **Handling Duplicates**: Understanding the critical difference between **Exact Clones** `dataset.duplicated()` and **Semantic Duplicates** `dataset.duplicated(subset=...)`.
+- **Replacing & Mapping**: Standardizing values (e.g., `M` -> `Male`) and fixing inconsistent string casing.
+- **Data Types**: Identifying and casting columns to correct formats (`int`, `float`, `bool`) to prevent logic errors.
 
 ### 2. Missing Values (Imputation)
+- **Casting First**: Why checking data types is essential before filling nulls.
 - Strategic filling of null values using **Mean**, **Median**, and **Mode**.
 - Understanding why the **Median** is mathematically safer when outliers are present.
 
