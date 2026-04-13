@@ -42,18 +42,21 @@ mutual_info = mutual_info_classif(x_train_fs2, y_train, random_state=42)
 # We create a Series where the index is our Feature Names
 mi_series = pd.Series(mutual_info, index=x_train_fs2.columns)
 
-# 3. Sort by usefulness (Descending order)
-mi_series = mi_series.sort_values(ascending=False)
+# 3. Sort for Plotting
+# For horizontal bars (barh), Matplotlib plots from the bottom up.
+# To get the highest score at the TOP, we sort ascending here.
+mi_plot_data = mi_series.sort_values(ascending=True)
 
 # 4. Plotting the 'Signal'
 plt.figure(figsize=(10, 8))
-# barh creates a horizontal bar chart which is easier to read for many columns
-mi_series.plot(kind='barh', color='teal')
-plt.title("Step 3: Feature Relevance Ranking")
+# barh creates a horizontal bar chart
+mi_plot_data.plot(kind='barh', color='teal')
+plt.title("Step 3: Feature Relevance Ranking (Highest at Top)")
 plt.xlabel("Mutual Information Score")
 plt.show()
 
 # 5. Review the 'Top Candidates'
+# We still print the head of the original descending series to see the top 10
 print("🏆 The High-Signal Features:")
 print(mi_series.head(10))
 ```
