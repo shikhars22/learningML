@@ -81,9 +81,15 @@ def load_data(path):
     
     # WE SPLIT THE DATA HERE
     # X (Features): The 'Inputs' (Age, Fare, Gender, etc.)
-    # We drop columns that are too complex or have zero predictive power like Email or Phone.
+    # SPLIT FEATURES AND TARGET
+    # We drop metadata and low-signal columns.
     drop_cols = ['PassengerId', 'Subscription', 'JoinDate', 'Email', 'Phone', 'Remarks', 'DeptCode', 'DiscountCode']
     X = df.drop(columns=drop_cols, errors='ignore')
+    
+    # CRITICAL FIX: We explicitly set the column order here.
+    # This ensures that both training and prediction always see the exact same layout.
+    features = ['Age', 'Fare', 'Gender', 'City', 'Score', 'IsActive']
+    X = X[features]
     
     # y (Target): The 'Answer Key' - the specific thing the model is trying to master.
     y = df['Subscription']
@@ -120,14 +126,21 @@ def build_switchboard(X):
 
     # 4. FINAL SORTING (The ColumnTransformer)
     # This acts as the Master Controller that moves the data through the paths we built.
-    return ColumnTransformer(
+    switchboard = ColumnTransformer(
         transformers=[
             ('num_route', numeric_path, numeric_columns),
             ('cat_route', categorical_path, categorical_columns)
         ],
         # verbose_feature_names_out=False: Keeps our column names simple (e.g., 'Age' staying as 'Age').
-        verbose_feature_names_out=False
+        verbose_feature_names_out=False,
+        # remainder='passthrough' ensures we don't accidentally drop columns we want.
+        remainder='drop'
     )
+    
+    # Ensure the transformer itself stays in Pandas mode to preserve names.
+    switchboard.set_output(transform='pandas')
+    
+    return switchboard
 
 def build_atomic_engine(switchboard):
     """
