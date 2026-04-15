@@ -7,7 +7,10 @@ def test_drive():
     This script acts as a 'Simulation' of a real customer using our model. 
     It proves and validates that the Atomic Engine can handle raw data instantly.
     """
-    MODEL_PATH = '../models/subscriber_factory.joblib'
+    # This path is calculated relative to where THIS script is saved.
+    # It ensures the script works whether you run it from the root or from inside the production_scripts folder.
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    MODEL_PATH = os.path.join(current_dir, '..', 'models', 'subscriber_factory.joblib')
     
     # 1. LOAD THE SAVED BRAIN
     # Here's the thing: we don't need to load the cleaner, the scaler, or the brain separately.
